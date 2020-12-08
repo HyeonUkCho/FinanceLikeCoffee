@@ -1,8 +1,53 @@
 .navbar-brand .navbar-brand-big-title {
-    font-size: 1.5em;
+    font-size: 3rem;
 }
 
 #navbar-brand-logo {
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 2rem;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+}
+
+.no-margin-bottom-p {
+    margin-bottom: 0;
+}
+
+.header-brand-big-title {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#header-brand-logo {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.no-padding-left {
+    padding-left: 0px;
+}
+
+#together {
+    max-width: 50%;
+}
+
+#glass {
+    max-width: 52%;
+}
+
+#continue {
+    max-width: 57%;
+}
+
+#financial-status-test {
+    background-image: url("../images/pink-background.png");
+}
+
+#financial-knowledge-test {
+    background-image: url("../images/red-background.png");
 }
