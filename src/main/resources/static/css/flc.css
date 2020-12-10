@@ -1,3 +1,9 @@
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+
+html,body {
+    font-family: 'NanumSquareRound',sans-serif !important;
+}
+
 .navbar-brand .navbar-brand-big-title {
     font-size: 3rem;
 }
@@ -28,6 +34,10 @@
     font-weight: 500;
 }
 
+#regist-study-btn {
+    background-color: #880033;
+}
+
 .no-padding-left {
     padding-left: 0px;
 }
@@ -45,9 +55,21 @@
 }
 
 #financial-status-test {
-    background-image: url("../images/pink-background.png");
+    background-color: #ff9999;
 }
 
 #financial-knowledge-test {
-    background-image: url("../images/red-background.png");
+    background-color: #880033;
+}
+
+.survey-button {
+    cursor: pointer;
+    color: #000000;
+    display: block;
+    width: 100%;
+    padding: .5rem 1rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    background-color: #000;
+    border: none;
 }
