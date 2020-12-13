@@ -20,6 +20,9 @@ html,body {
 
 .no-margin-bottom-p {
     margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 75%;
 }
 
 .header-brand-big-title {
@@ -34,24 +37,52 @@ html,body {
     font-weight: 700;
 }
 
+img#main-header-img {
+    display: block;
+    width: 115vw;
+    height: 40vh;
+    object-fit: fill;
+    position: relative;
+    max-width: initial;
+    margin-left: 0%;
+}
+
+#header-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #regist-study-btn {
     background-color: #880033;
+    font-size: 2rem;
+}
+.feature-title {
+    font-size: 2rem;
 }
 
 .no-padding-left {
     padding-left: 0px;
 }
 
+div.col-12.col-md-6.no-padding.no-padding {
+    padding: 0;
+}
+
 #together {
+    width: 48%;
     max-width: 50%;
 }
 
 #glass {
-    max-width: 52%;
+    width: 50%;
+    max-width: 50%;
 }
 
 #continue {
-    max-width: 57%;
+    width: 55%;
+    max-width: 55%;
 }
 
 #financial-status-test {
@@ -60,6 +91,22 @@ html,body {
 
 #financial-knowledge-test {
     background-color: #880033;
+}
+
+.testimonials-title {
+    font-size: 2.5rem;
+}
+
+.survey-title {
+    font-size: 3rem;
+}
+
+.status {
+    font-size: 4.5em;
+}
+
+.idea {
+    font-size: 4.5rem;
 }
 
 .survey-button {
@@ -84,4 +131,62 @@ html,body {
     margin-bottom: 0;
     font-size: 2rem;
     font-weight: 700;
+}
+
+header.masthead#about {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+#about-study {
+    width: 95%;
+}
+
+.about-title {
+    font-size: 1.75rem;
+}
+
+#about-content {
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+
+    img#main-header-img {
+        display: block;
+        width: 100vw;
+        height: 75vh;
+        object-fit: cover;
+        position: relative;
+    }
+
+    p.no-margin-bottom-p {
+        font-size: 2rem;
+        font-weight: 700;
+        width: 100%;
+    }
+
+    #header-brand-logo {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .feature-title {
+        font-size: 3rem;
+    }
+
+    div.col-12.col-md-6.no-padding.no-padding {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .testimonials-title {
+        font-size: 3rem;
+    }
 }
