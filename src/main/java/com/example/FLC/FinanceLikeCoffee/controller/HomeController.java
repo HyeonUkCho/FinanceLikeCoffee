@@ -16,4 +16,9 @@ public class HomeController {
     public void about(Model model) {
 
     }
+
+    @GetMapping("page/FAQ")
+    public void FAQ(Model model) {
+
+    }
 }

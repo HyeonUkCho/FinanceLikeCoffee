@@ -43,7 +43,7 @@ header.masthead h1 {
 .testimonials .testimonial-item{max-width:25rem}
 .testimonials .testimonial-item img{max-width:12rem;box-shadow:0 5px 5px 0 #adb5bd}
 
-footer.footer{background-color:#ff9999;padding-top:3rem;padding-bottom:3rem}
+footer.footer{background-color:#880033;padding-top:3rem;padding-bottom:3rem}
 
 @media (min-width:768px){
 header.masthead#main{height: 100%;}
