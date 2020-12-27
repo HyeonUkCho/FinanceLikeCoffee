@@ -20,7 +20,7 @@ html,body {
 
 .no-margin-bottom-p {
     margin-bottom: 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
     width: 75%;
 }
@@ -44,14 +44,14 @@ html,body {
 #header-brand-logo {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
 img#main-header-img {
     display: block;
     width: 115vw;
-    height: 40vh;
+    height: 30vh;
     object-fit: fill;
     position: relative;
     max-width: initial;

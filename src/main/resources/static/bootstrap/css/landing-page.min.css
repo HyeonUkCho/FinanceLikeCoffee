@@ -8,10 +8,10 @@ body {
 }
 header.masthead#main {
     position: relative;
-    background-image: url(/images/bgcolor.png);
+    /*background-image: url(/images/bgcolor.png);*/
     background-size: cover;
     width: 100vw;
-    height: 65vh;
+    height: 45vh;
 }
 
 header.masthead .overlay {
