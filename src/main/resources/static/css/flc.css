@@ -2,75 +2,67 @@
 
 html,body {
     font-family: 'NanumSquareRound',sans-serif !important;
+    font-size: 16px;
 }
 
-.navbar-brand .navbar-brand-big-title {
-    font-size: 3rem;
+/* navbar section begin */
+#fwc-navbar {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
-
-#navbar-brand-logo {
-    margin-top: 0;
-    margin-bottom: 0;
+.navbar-brand .fwc-navbar-brand-big-title {
     font-size: 2rem;
 }
 
-.nav-item {
-    font-size: 1.5rem;
+#fwc-navbar-brand-logo {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+}
+
+.fwc-nav-item {
+    font-size: 1rem;
+}
+/* navbar section end */
+
+/* common content font-size, font-weight start */
+.body-title-font {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.body-content-font {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.body-description-font {
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+/* common content font-size, font-weight end */
+
+/* common content color start */
+.fwc-color {
+    color: #880033;
+}
+/* common content color end */
+
+#masthead-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .no-margin-bottom-p {
     margin-bottom: 0;
-    font-size: 1rem;
-    font-weight: 500;
-    width: 75%;
-}
-
-.no-margin-bottom-p-footer {
-    margin-bottom: 0;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 75%;
-}
-
-.no-margin-bottom-p-email {
-    margin-bottom: 0;
-}
-
-.header-brand-big-title {
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-#header-brand-logo {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-img#main-header-img {
-    display: block;
-    width: 115vw;
-    height: 30vh;
-    object-fit: fill;
-    position: relative;
-    max-width: initial;
-    margin-left: 0%;
-}
-
-#header-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 #regist-study-btn {
     background-color: #880033;
-    font-size: 2rem;
-}
-.feature-title {
-    font-size: 2rem;
+    font-size: 1rem;
+    max-width: 50%;
 }
 
 .no-padding-left {
@@ -82,18 +74,15 @@ div.col-12.col-md-6.no-padding.no-padding {
 }
 
 #together {
-    width: 48%;
-    max-width: 50%;
+    width: 30%;
 }
 
 #glass {
-    width: 50%;
-    max-width: 50%;
+    width: 25%;
 }
 
 #continue {
-    width: 55%;
-    max-width: 55%;
+    width: 30%;
 }
 
 #financial-status-test {
@@ -104,20 +93,12 @@ div.col-12.col-md-6.no-padding.no-padding {
     background-color: #880033;
 }
 
-.testimonials-title {
+.status {
     font-size: 2.5rem;
 }
 
-.survey-title {
-    font-size: 3rem;
-}
-
-.status {
-    font-size: 4.5em;
-}
-
 .idea {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
 }
 
 .survey-button {
@@ -126,21 +107,21 @@ div.col-12.col-md-6.no-padding.no-padding {
     display: block;
     width: 100%;
     padding: .5rem 1rem;
-    font-size: 2rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     background-color: #000;
     border: none;
 }
 
 .footer-brand-big-title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 #footer-brand-logo {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
