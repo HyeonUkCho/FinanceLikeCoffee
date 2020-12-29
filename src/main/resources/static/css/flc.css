@@ -113,6 +113,10 @@ div.col-12.col-md-6.no-padding.no-padding {
     border: none;
 }
 
+.study-subjects-img {
+    width: 100%;
+}
+
 .footer-brand-big-title {
     font-size: 2rem;
     font-weight: 700;
@@ -126,20 +130,12 @@ div.col-12.col-md-6.no-padding.no-padding {
 }
 
 header.masthead#about {
-    padding-top: 5rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
 }
 
 #about-study {
-    width: 95%;
-}
-
-.about-title {
-    font-size: 1.75rem;
-}
-
-#about-content {
-    font-weight: 500;
+    width: 100%;
 }
 
 header.masthead#FAQ {
@@ -161,11 +157,8 @@ ul.FAQ-tab-container {
 }
 
 .tab-item {
-    font-size: 1.5rem;
-}
-
-.tab-content {
-    height: 35rem;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .QnA {
