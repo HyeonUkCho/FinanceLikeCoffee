@@ -22,7 +22,9 @@
                     <div class="col-12 col-md-3">
                     </div>
                     <div class="col-12 col-md-6 no-padding">
-                        <button type="button" class="btn btn-block btn-lg text-white" id="regist-study-btn">스터디 신청하기</button>
+                        <button type="button" class="btn btn-block btn-lg text-white" id="regist-study-btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf87SzwjT0nObgY_r4IhPlBiJY6h-W-2OYhyj-5C9nEH4nRwg/viewform')">
+                            스터디 신청하기
+                        </button>
                     </div>
                     <div class="col-12 col-md-3">
                     </div>
@@ -72,7 +74,7 @@
                                 <div class="text-white align-middle mb-5 status">STATUS</div>
                             </div>
                             <div>
-                                <button type="button" class="survey-button text-right text-white">지금 바로 점검하기>></button>
+                                <button type="button" class="survey-button text-right text-white" onclick="alertWeAreReady()">지금 바로 점검하기>></button>
                             </div>
                         </div>
                     </div>
@@ -85,7 +87,7 @@
                                 <div class="text-white align-middle mb-5 idea">IDEA</div>
                             </div>
                             <div>
-                                <button type="button" class="survey-button text-right text-white">지금 바로 점검하기>></button>
+                                <button type="button" class="survey-button text-right text-white" onclick="alertWeAreReady()">지금 바로 점검하기>></button>
                             </div>
                         </div>
                     </div>
@@ -210,4 +212,17 @@
         </div>
     </section>
 </div>
+
+<th:block layout:fragment="script">
+    <script th:inline="javascript">
+        $(document).ready(function() {
+
+        });
+
+        function alertWeAreReady() {
+            alert('준비 중입니다.');
+        }
+    </script>
+
+</th:block>
 </html>

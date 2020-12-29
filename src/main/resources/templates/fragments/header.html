@@ -6,23 +6,25 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-light" id="fwc-navbar">
         <div class="container">
-            <a class="navbar-brand" href="/page/home"><p id="fwc-navbar-brand-logo"><span class="fwc-navbar-brand-big-title">금융</span>을<span class="fwc-navbar-brand-big-title">커피</span>처럼</p></a>
+            <a class="navbar-brand" th:href="@{/page/home}"><p id="fwc-navbar-brand-logo"><span class="fwc-navbar-brand-big-title">금융</span>을<span class="fwc-navbar-brand-big-title">커피</span>처럼</p></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2"  id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="fwc-nav-item text-center">
-                        <a class="nav-link" href="/page/about">소개</a>
+                        <a class="nav-link" th:href="@{/page/about}">소개</a>
                     </li>
                     <li class="fwc-nav-item text-center">
-                        <a class="nav-link" href="#">스터디 신청</a>
+                        <a class="nav-link" href="#" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf87SzwjT0nObgY_r4IhPlBiJY6h-W-2OYhyj-5C9nEH4nRwg/viewform')">
+                            스터디 신청
+                        </a>
                     </li>
                     <li class="fwc-nav-item text-center">
-                        <a class="nav-link" href="#">성향 테스트</a>
+                        <a class="nav-link" href="#" onclick="alertWeAreReady()">성향 테스트</a>
                     </li>
                     <li class="fwc-nav-item text-center">
-                        <a class="nav-link" href="/page/FAQ">FAQ</a>
+                        <a class="nav-link" th:href="@{/page/FAQ}">FAQ</a>
                     </li>
                 </ul>
             </div>

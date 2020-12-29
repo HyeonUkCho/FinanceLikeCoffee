@@ -25,7 +25,7 @@ echo "> current pid check"
 
 CURRENT_PID=$(pgrep -f ${PROJECT_NAME}.*.jar)
 
-echo "> current pid check"
+echo "> current pid $CURRENT_PID"
 
 if [ -z "$CURRENT_PID" ]; then
   echo "> running process is not exist!"
