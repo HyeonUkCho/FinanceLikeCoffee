@@ -33,12 +33,27 @@ html,body {
     font-weight: 700;
 }
 
+.body-sub-title-font {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
 .body-content-font {
     font-size: 0.9rem;
     font-weight: 500;
 }
 
+.body-sub-content-font {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
 .body-description-font {
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.body-sub-description-font {
     font-size: 0.7rem;
     font-weight: 500;
 }
@@ -168,42 +183,161 @@ ul.FAQ-tab-container {
 
 @media (min-width: 768px) {
 
-    img#main-header-img {
-        display: block;
-        width: 100vw;
-        height: 75vh;
-        object-fit: cover;
-        position: relative;
+    /* navbar section begin */
+    #fwc-navbar {
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
-
-    p.no-margin-bottom-p {
+    .navbar-brand .fwc-navbar-brand-big-title {
         font-size: 2rem;
-        font-weight: 700;
-        width: 100%;
     }
 
-    #header-brand-logo {
+    #fwc-navbar-brand-logo {
         margin-top: 0;
         margin-bottom: 0;
-        font-size: 3rem;
+        font-size: 1.4rem;
+    }
+
+    .fwc-nav-item {
+        font-size: 1.4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    /* navbar section end */
+
+    /* common content font-size, font-weight start */
+    .body-title-font {
+        font-size: 2.5rem;
         font-weight: 700;
     }
 
-    .feature-title {
-        font-size: 3rem;
+    .body-sub-title-font {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .body-content-font {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .body-sub-content-font {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .body-description-font {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .body-sub-description-font {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    /* common content font-size, font-weight end */
+
+    /* common content color start */
+    .fwc-color {
+        color: #880033;
+    }
+    /* common content color end */
+
+    #masthead-container {
+        height: 45vw;
+        padding-top: 13vw;
+    }
+
+    .no-margin-bottom-p {
+        margin-bottom: 0;
+    }
+
+    #regist-study-btn {
+        background-color: #880033;
+        font-size: 1.5rem;
+        max-width: 100%;
+    }
+
+    .no-padding-left {
+        padding-left: 0px;
     }
 
     div.col-12.col-md-6.no-padding.no-padding {
         padding: 0;
-        max-width: 100%;
     }
 
-    .about-title {
+    #together {
+        width: 43%;
+    }
+
+    #glass {
+        width: 45%;
+    }
+
+    #continue {
+        width: 50%;
+    }
+
+    #financial-status-test {
+        background-color: #ff9999;
+    }
+
+    #financial-knowledge-test {
+        background-color: #880033;
+    }
+
+    .status {
+        font-size: 2.5rem;
+    }
+
+    .idea {
+        font-size: 2.5rem;
+    }
+
+    .survey-button {
+        cursor: pointer;
+        color: #000000;
+        display: block;
+        width: 100%;
+        padding: .5rem 1rem;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        background-color: #000;
+        border: none;
+    }
+
+    .study-subjects-img {
+        width: 100%;
+    }
+
+    .footer-brand-big-title {
         font-size: 2rem;
+        font-weight: 700;
     }
 
-    .testimonials-title {
-        font-size: 3rem;
+    #footer-brand-logo {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    header.masthead#about {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    #about-study {
+        width: 100%;
+    }
+
+    header.masthead#FAQ {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background-color: #880033;
     }
 
     a.FAQ-btn {
@@ -211,24 +345,20 @@ ul.FAQ-tab-container {
         border-width: thin;
         border-color: #880033;
         border-radius: .25rem;
-        margin: 1.5rem;
+        margin: .5rem;
     }
 
     ul.FAQ-tab-container {
-        margin: 3rem;
+        margin: 2rem;
     }
 
     .tab-item {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: 500;
     }
 
-    .tab-content {
-        padding-left: 7rem;
-        padding-right: 7rem;
-        height: 35rem;
-    }
-
-    .margin-top-1rem {
-        margin-top: 1rem;
+    .QnA {
+        border-bottom: solid;
+        border-width: thin;
     }
 }

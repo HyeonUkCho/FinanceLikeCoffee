@@ -53,9 +53,17 @@ header.masthead h1 {
 footer.footer{background-color:#880033;padding-top:3rem;padding-bottom:3rem}
 
 @media (min-width:768px){
-header.masthead#main{height: 100%;}
-header.masthead h1 {font-size:3rem}
-.showcase .showcase-text{padding:4rem}
-.testimonials {padding-top:7rem;padding-bottom:7rem;background-image: url("/images/bgcolor.png"); background-size: cover;}
-.features-icons{padding-top:7rem;padding-bottom:5rem;}
+
+    header.masthead#main {
+        position: relative;
+        background-image: url(/images/fill-me-with-finance-pc.png);
+        background-size: cover;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+
+    header.masthead h1 {font-size:3rem}
+    .showcase .showcase-text{padding:4rem}
+    .testimonials {background-image: url("/images/bgcolor.png"); background-size: cover;height:45vw;padding-top: 10vw;}
+    .features-icons{height:45vw;padding-top: 10vw;}
 }
