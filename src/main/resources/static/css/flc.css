@@ -57,6 +57,12 @@ html,body {
     font-size: 0.7rem;
     font-weight: 500;
 }
+
+.body-QnA-font {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 /* common content font-size, font-weight end */
 
 /* common content color start */
