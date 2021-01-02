@@ -32,7 +32,7 @@ if [ -z "$CURRENT_PID" ]; then
 else
   echo "> kill - 15 $CURRENT_PID"
   kill -15 $CURRENT_PID
-  sleep 3
+  sleep 5
 fi
 
 echo "> new app deploy"
