@@ -244,6 +244,11 @@ ul.FAQ-tab-container {
         font-weight: 500;
     }
 
+    .body-QnA-font {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
     /* common content font-size, font-weight end */
 
     /* common content color start */

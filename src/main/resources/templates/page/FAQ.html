@@ -102,8 +102,8 @@
                         </div>
                         <div class="tab-pane fade" id="pills-FAQ3" role="tabpanel" aria-labelledby="pills-FAQ3-tab">
                             <div class="mb-5 QnA">
-                                <div class="margin-top-1rem body-content-font mb-1">Q. 스터디원 선정되고 구성되는 기준이 어떻게 되나요?</div>
-                                <div class="margin-top-1rem body-description-font">홈페이지 신청하기 링크의 구글 설문 참여시 신청이 되며, 내부 심사 기준에 따라 참석 가부 여부가 결정됩니다.</div>
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. 스터디원 선정되고 구성되는 기준이 어떻게 되나요?</div>
+                                <div class="margin-top-1rem body-QnA-font">홈페이지 신청하기 링크의 구글 설문 참여시 신청이 되며, 내부 심사 기준에 따라 참석 가부 여부가 결정됩니다.</div>
                             </div>
                             <div class="mb-5 QnA">
                                 <div class="margin-top-1rem body-QnA-font mb-1">Q. 내부 심사 기준은 무엇인가요?</div>
@@ -156,4 +156,13 @@
     </section>
 
 </div>
+
+<th:block layout:fragment="script">
+    <script th:inline="javascript">
+        function alertWeAreReady() {
+            alert('준비 중입니다.');
+        }
+    </script>
+</th:block>
+
 </html>
