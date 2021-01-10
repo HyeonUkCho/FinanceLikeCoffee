@@ -76,6 +76,11 @@ html,body {
     padding-bottom: 15px;
 }
 
+#masthead-container2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .no-margin-bottom-p {
     margin-bottom: 0;
 }
@@ -84,6 +89,12 @@ html,body {
     background-color: #880033;
     font-size: 1rem;
     max-width: 50%;
+}
+
+#go-faq-btn {
+    background-color: #880033;
+    font-size: 1rem;
+    max-width: 100%;
 }
 
 .no-padding-left {
@@ -262,11 +273,22 @@ ul.FAQ-tab-container {
         padding-top: 13vw;
     }
 
+    #masthead-container2 {
+        height: 45vw;
+        padding-top: 13vw;
+    }
+
     .no-margin-bottom-p {
         margin-bottom: 0;
     }
 
     #regist-study-btn {
+        background-color: #880033;
+        font-size: 1.5rem;
+        max-width: 100%;
+    }
+
+    #go-faq-btn {
         background-color: #880033;
         font-size: 1.5rem;
         max-width: 100%;
