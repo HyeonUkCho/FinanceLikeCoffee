@@ -41,4 +41,4 @@ JAR_NAME=$(ls -tr $REPOSITORY/ | grep  jar | tail -n 1)
 
 echo "> JAR_NAME: $JAR_NAME"
 
-nohup java -Dspring.profiles.active=prod -jar $REPOSITORY/$JAR_NAME 2>&1 &
+java -Dspring.profiles.active=prod -jar $REPOSITORY/$JAR_NAME 2>&1 &
