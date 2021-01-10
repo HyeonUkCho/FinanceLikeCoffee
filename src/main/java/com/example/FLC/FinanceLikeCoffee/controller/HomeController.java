@@ -28,4 +28,10 @@ public class HomeController {
         logger.info("home page assessed.......");
         return "FAQ";
     }
+
+    @GetMapping("/agree")
+    public String agree(Model model) {
+        logger.info("agree page assessed.......");
+        return "agree";
+    }
 }

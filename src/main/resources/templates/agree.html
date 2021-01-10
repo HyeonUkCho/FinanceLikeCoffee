@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/default_layout">
+
+<div layout:fragment="content">
+    <form>
+        <div class="preview">
+            <p></p>
+        </div>
+    </form>
+
+</div>
+<th:block layout:fragment="script">
+    <script th:inline="javascript">
+        window.onload=function(){
+            readTextFile("http://localhost:8080/agree.txt");
+        }
+
+        function readTextFile(file)
+        {
+            const preview = document.querySelector('.preview');
+            const list = document.createElement('ul');
+            preview.appendChild(list);
+            const listItem = document.createElement('li');
+            const textContents = document.createElement('div');
+
+            var rawFile = new XMLHttpRequest();
+            rawFile.open("GET", file, false);
+            rawFile.onreadystatechange = function ()
+            {
+                if(rawFile.readyState === 4)
+                {
+                    if(rawFile.status === 200 || rawFile.status == 0)
+                    {
+                        var allText = rawFile.responseText;
+                        textContents.innerHTML = allText;
+                    }
+                }
+            }
+            rawFile.send(null);
+
+            list.appendChild(listItem);
+        }
+    </script>
+</th:block>
+</html>
