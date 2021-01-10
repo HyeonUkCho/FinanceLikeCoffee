@@ -8,17 +8,19 @@ body {
 }
 header.masthead#main {
     position: relative;
-    background-image: url(/images/fill-me-with-finance.png);
+    background-image: url(/images/coffee1_phone.png);
     background-size: cover;
     width: 100%;
+    height: 100vw;
     background-repeat: no-repeat;
 }
 
 header.masthead#main2 {
     position: relative;
-    background-image: url(/images/fill-with-finance-2.png);
+    background-image: url(/images/coffee2_phone.png);
     background-size: cover;
     width: 100%;
+    height: 100vw;
     background-repeat: no-repeat;
 }
 
@@ -48,7 +50,7 @@ header.masthead h1 {
 .features-icons .features-icons-item:hover .features-icons-icon i{font-size:5rem}
 
 .testimonials {background-image: url("/images/bgcolor.png");background-size:cover;padding-top:3rem;padding-bottom:2rem;}
-.testimonials .testimonial-item{max-width:25rem}
+.testimonials .testimonial-item{max-width:20rem}
 .testimonials .testimonial-item img{max-width:12rem;box-shadow:0 5px 5px 0 #adb5bd}
 
 .study-subjects-features-icons{
@@ -64,17 +66,21 @@ footer.footer{background-color:#880033;padding-top:3rem;padding-bottom:3rem}
 
     header.masthead#main {
         position: relative;
-        background-image: url(/images/fill-me-with-finance-pc.png);
+        /*background-image: url(/images/fill-me-with-finance-pc.png);*/
+        background-image: url(/images/bean1.png);
         background-size: cover;
         width: 100%;
+        height: 50vw;
         background-repeat: no-repeat;
     }
 
     header.masthead#main2 {
         position: relative;
-        background-image: url(/images/fill-with-finance-pc-2.png);
+        /*background-image: url(/images/fill-with-finance-pc-2.png);*/
+        background-image: url(/images/bean2.png);
         background-size: cover;
         width: 100%;
+        height: 50vw;
         background-repeat: no-repeat;
     }
 
