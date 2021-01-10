@@ -2,10 +2,12 @@
 <!-- 60초마다 설정 파일의 변경을 확인 하여 변경시 갱신 -->
 <configuration scan="true" scanPeriod="60 seconds">
     <!--springProfile 태그를 사용하면 logback 설정파일에서 복수개의 프로파일을 설정할 수 있다.-->
-    <springProfile name="dev"> <property resource="logback-dev.properties"/>
+    <springProfile name="dev">
+        <property resource="logback-dev.properties"/>
     </springProfile>
 
-    <springProfile name="prod"> <property resource="logback-prod.properties"/>
+    <springProfile name="prod">
+        <property resource="logback-prod.properties"/>
     </springProfile>
 
     <!--Environment 내의 프로퍼티들을 개별적으로 설정할 수도 있다.-->
@@ -79,19 +81,16 @@
 
     <!-- root레벨 설정 -->
     <root level="${LOG_LEVEL}">
-        <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE"/>
         <appender-ref ref="Error"/>
     </root>
 
     <logger name="org.thymeleaf" level="INFO">
-        <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE"/>
         <appender-ref ref="Error"/>
     </logger>
 
     <logger name="org.springframework" level="INFO">
-        <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE"/>
         <appender-ref ref="Error"/>
     </logger>
