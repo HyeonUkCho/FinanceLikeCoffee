@@ -300,7 +300,7 @@ ul.FAQ-tab-container {
     #go-faq-btn {
         background-color: #880033;
         font-size: 1.5rem;
-        max-width: 50%;
+        max-width: 100%;
     }
 
     .no-padding-left {
