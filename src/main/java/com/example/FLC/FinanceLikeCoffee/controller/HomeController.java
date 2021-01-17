@@ -1,7 +1,9 @@
 package com.example.FLC.FinanceLikeCoffee.controller;
 
+import com.example.FLC.FinanceLikeCoffee.Utils.UAParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
@@ -16,31 +18,46 @@ public class HomeController {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass().getSimpleName());
 
+    @Autowired
+    UAParser uaParser;
+
     @GetMapping("/")
     public String home(Model model, HttpServletRequest request) {
         logger.info("home page assessed.......");
-        logger.info("request ip : " + getClientIp(request));
+        logger.info("Request IP and UserAgent-Info : "
+                + getClientIp(request)
+                + "/"
+                + uaParser.getClientRequestInfo(request));
         return "home";
     }
 
     @GetMapping("/about")
     public String about(Model model, HttpServletRequest request) {
         logger.info("about page assessed.......");
-        logger.info("request ip : " + getClientIp(request));
+        logger.info("Request IP and UserAgent-Info : "
+                + getClientIp(request)
+                + "/"
+                + uaParser.getClientRequestInfo(request));
         return "about";
     }
 
     @GetMapping("/FAQ")
     public String FAQ(Model model, HttpServletRequest request) {
         logger.info("FAQ page assessed.......");
-        logger.info("request ip : " + getClientIp(request));
+        logger.info("Request IP and UserAgent-Info : "
+                + getClientIp(request)
+                + "/"
+                + uaParser.getClientRequestInfo(request));
         return "FAQ";
     }
 
     @GetMapping("/agree")
     public String agree(Model model, HttpServletRequest request) {
         logger.info("agree page assessed.......");
-        logger.info("request ip : " + getClientIp(request));
+        logger.info("Request IP and UserAgent-Info : "
+                + getClientIp(request)
+                + "/"
+                + uaParser.getClientRequestInfo(request));
         return "agree";
     }
 

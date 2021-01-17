@@ -20,8 +20,12 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+	compile group: 'net.sf.uadetector', name: 'uadetector-core', version: '0.9.22'
+	compile group: 'net.sf.uadetector', name: 'uadetector-resources', version: '2014.10'
+
 	implementation('nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect')
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.projectlombok:lombok'
