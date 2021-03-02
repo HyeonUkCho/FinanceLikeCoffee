@@ -26,13 +26,10 @@ public class HomeService {
     }
 
     public void saveVisitLog(HttpServletRequest request, Device device, String pageName){
-        logger.debug("saveVisitLog start");
+        logger.info("saveVisitLog start");
         String channelType = uaParser.checkPcOrMobileOrTablet(device);
-        logger.debug("saveVisitLog start1");
         String ip          = uaParser.getClientIp(request);
-        logger.debug("saveVisitLog start2");
         String visitorInfo = uaParser.getClientRequestInfo2(request);
-        logger.debug("saveVisitLog start3");
 
         VisitLog visitLog = VisitLog.builder()
                 .ip(ip)
@@ -42,6 +39,5 @@ public class HomeService {
                 .build();
 
         visitLogRepository.save(visitLog);
-        logger.debug("saveVisitLog start4");
     }
 }
