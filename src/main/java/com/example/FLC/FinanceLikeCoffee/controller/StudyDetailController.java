@@ -23,7 +23,7 @@ public class StudyDetailController {
     @GetMapping("/stock_begin")
     public String home(Model model, HttpServletRequest request) {
         logger.info("stock_begin page assessed.......");
-        return "/studydetail/stock_begin";
+        return "studydetail/stock_begin";
     }
 
 }
