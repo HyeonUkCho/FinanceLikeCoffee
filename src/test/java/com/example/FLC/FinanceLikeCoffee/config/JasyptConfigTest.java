@@ -22,7 +22,7 @@ public class JasyptConfigTest {
     @Test
     public void encryptDecryptTest() {
 
-        String orgText = "ticklemickle1@#";
+        String orgText = "test@#";
 
         String encText = jasyptStringEncryptor.encrypt(orgText);
 
