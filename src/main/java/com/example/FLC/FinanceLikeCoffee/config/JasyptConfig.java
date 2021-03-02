@@ -14,11 +14,14 @@ public class JasyptConfig {
     public StringEncryptor stringEncryptor(Environment environment) {
         PooledPBEStringEncryptor encryptor = new PooledPBEStringEncryptor();
         SimpleStringPBEConfig config = new SimpleStringPBEConfig();
-        config.setPassword(environment.getProperty("jasypt.encryptor.password", "ticklemickle"));
-        config.setAlgorithm("PBEWithSHA1AndDESede");
+        config.setPassword(environment.getProperty("jasypt.encryptor.password"));
+        config.setAlgorithm("PBEWithMD5AndDES");
+        config.setKeyObtentionIterations("1000");
+        config.setPoolSize("1");
+        config.setProviderName("SunJCE");
         config.setStringOutputType("base64");
         encryptor.setConfig(config);
-        encryptor.setPoolSize(5);
+        encryptor.setPoolSize(1);
         return encryptor;
     }
 }
