@@ -37,6 +37,14 @@ html,body {
     text-align: center;
 }
 
+.body-left {
+    text-align: left;
+}
+
+.body-right {
+    text-align: right;
+}
+
 .btn-margin {
     margin: auto;
     width: 50%;
@@ -77,6 +85,9 @@ html,body {
 /* common content color start */
 .fwc-color {
     color: #880033;
+}
+.fwc-background-color {
+    background-color: #880033;
 }
 /* common content color end */
 
@@ -205,6 +216,34 @@ ul.FAQ-tab-container {
 .QnA {
     border-bottom: solid;
     border-width: thin;
+}
+
+#stock-study-graph {
+    max-width: 50%;
+    margin-top: 5px;
+}
+
+#study-about-first {
+    max-width: 50%;
+    float: left;
+}
+
+.check-btn {
+    max-width: 10%;
+    height: 30%;
+}
+
+.study-about-first {
+    float: left;
+}
+
+.no-side-margin-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* margin-right: -15px; */
+    /* margin-left: -15px;*/
 }
 
 @media (min-width: 768px) {

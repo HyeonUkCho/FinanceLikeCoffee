@@ -6,117 +6,102 @@
 <div layout:fragment="content">
 
     <!-- Masthead -->
-    <header class="masthead" id="main">
-        <!--<img class="img-fluid" id="main-header-img" src="/images/fill-me-with-finance.png" alt="">-->
-        <div class="container" id="masthead-container">
+    <header class="study-detail" id="main">
+        <img class="img-fluid" id="main-header-img" src="/images/stock_study_beginner_main.png" alt="">
+        <div class="container" id="study-detail-container">
             <div class="row">
+                <div class="col-xl-12 body-title-font" style="margin-top: 5vw;margin-bottom: 3vw;">남들은 어떻게 해요?</div>
 
-                <div class="col-xl-12 body-title-font body-center" style="margin-top: 5vw;margin-bottom: 3vw;">남들은 어떻게 해요?</div>
-
-                <div class="col-xl-12 no-margin-bottom-p body-content-font body-center">비슷한 사람들과 함께 지식을 공유하는 공간</div>
-                <div class="col-xl-12 no-margin-bottom-p body-content-font body-center">처음이기에 모르고 헷갈리는 돈 이야기,</div>
-                <div class="col-xl-12 no-margin-bottom-p body-content-font body-center" style="margin-bottom: 3vw;">나와 딱 맞는 재테크 스터디 시작해요</div>
-
+                <div class="col-xl-12 no-margin-bottom-p body-content-font">처음 시작하는데 무작정 시작할 수는 없으니깐</div>
+                <div class="col-xl-12 no-margin-bottom-p body-content-font" style="margin-bottom: 3vw;">나와 비슷한 사람들과 함께 차근차근</div>
 
                 <div class="col-md-4 body-center btn-margin">
-                    <button type="button" class="btn btn-block btn-lg text-white btn-margin" id="regist-study-btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf87SzwjT0nObgY_r4IhPlBiJY6h-W-2OYhyj-5C9nEH4nRwg/viewform')">
+                    <!--<button type="button" class="btn btn-block btn-lg text-white btn-margin" id="regist-study-btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf87SzwjT0nObgY_r4IhPlBiJY6h-W-2OYhyj-5C9nEH4nRwg/viewform')">
                         스터디 신청하기
-                    </button>
+                    </button>-->
+                    <div class="col-xl-12 no-margin-bottom-p body-title-font body-right">월 30,000원</div>
                 </div>
 
             </div>
         </div>
     </header>
-
+    <hr class="fwc-background-color mt-2 mb-2">
     <!-- Masthead 2-->
-    <header class="masthead" id="main2">
+    <header class="study-detail" id="main2">
         <!--<img class="img-fluid" id="main-header-img" src="/images/fill-me-with-finance.png" alt="">-->
-        <div class="container" id="masthead-container2">
+        <div class="container" id="study-detail-container2">
             <div class="row body-center">
                 <div class="col-xl-12">
-                    <div class="body-title-font" style="margin-top: 5vw;margin-bottom: 3vw;">재테크 공부,<br>어떻게 시작해야 하는 걸까요?</div>
+                    <div class="body-title-font" style="margin-top: 5vw;margin-bottom: 3vw;">나만 아직도 주린이인가!<br>모를 수록 용감하다!</div>
                 </div>
                 <div class="col-xl-12">
-                    <div class="no-margin-bottom-p body-content-font">책 읽고 유튜브 보고</div>
-                    <div class="no-margin-bottom-p body-content-font" style="margin-bottom: 3vw;">혼자 고민하지 말고 함께 시작해요</div>
+                    <div class="no-margin-bottom-p body-content-font">“다들 일단 사고 보라는데, 너무 무서워요”</div>
+                    <div class="no-margin-bottom-p body-content-font">“하루만에 10% 수익 먹었어요!</div>
+                    <div class="no-margin-bottom-p body-content-font" style="margin-bottom: 3vw;">이렇게 매일 사고 팔면 금방 부자되는 거죠?”</div>
                 </div>
-                <div class="col-md-12 col-lg-12 col-xl-12 mt-1">
+                <div class="col-md-12 col-lg-12 col-xl-12 mt-2 mb-2">
+                    <div class="col-md-4 no-padding body-center body-description-font">시작은 미약하지만 꾸준히 그리고 함께</div>
+                </div>
+                <div class="container body-content-font body-left mt-3">
+                    많은 사람들이 주식의 원리나 기본에 대해서 공부하지 않고 매수와 매도를 시작합니다. 이러한 경우 초심자의 행운처럼 수익을 보기 마련이죠.
+                    하지만, 기틀이 없는 지식과 방법은 결국 무너지기 마련입니다.
+                    재테크를 특정 기간만 한다고 하면 상관 없었겠지만, 평생해야 하는 것이 재테크이기에 차근히 시작해봐요.<br><br>
 
-                        <div class="col-md-4 no-padding body-center btn-margin">
-                            <a class="nav-link body-center" th:href="@{/FAQ}">
-                                <button type="button" class="btn btn-block btn-lg text-white btn-margin" id="go-faq-btn">
-                                    자주 묻는 질문
-                                </button>
-                            </a>
-                        </div>
+                    금융을커피처럼 [주식의 기본과 개념]은 주식을 체계적으로 학습을 시작하고자 하는 주린이분들에게 적합한 스터디입니다.
+                    느낌과 육각으로 왠지 오를 것 같아서 사고 떨어질 것 같아서 팔고 있지는 않나요?
+                    다양한 시각과 학습 방법으로 공부하다 보면 나만의 철학과 기준이 생겨 보다 성장한 나를 금방 찾아볼 수 있을 거예요.
                 </div>
             </div>
         </div>
     </header>
-
+    <hr class="fwc-background-color mt-2 mb-2">
     <!-- Icons Grid -->
     <section class="features-icons text-center">
-        <div class="container">
-            <div class="body-sub-title-font">재테크 스터디</div>
-            <div class="body-sub-title-font mb-3">경제 근육을 함께 키워봐요</div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="testimonial-item mx-auto mb-3 mb-lg-0">
-                        <img class="img-fluid mb-1" id="together" src="/images/together.png" alt="">
-                        <div class="body-sub-content-font">나와 비슷한 사람들의 금융 생활은 어떨까?</div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="testimonial-item mx-auto mb-3 mb-lg-0">
-                        <img class="img-fluid mb-1" id="glass" src="/images/glass.png" alt="">
-                        <div class="body-sub-content-font">혼자 공부하면 꾸준히 하기 힘드니까</div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="testimonial-item mx-auto mb-3 mb-lg-0">
-                        <img class="img-fluid mb-1" id="continue" src="/images/continue.png" alt="">
-                        <div class="body-sub-content-font">순간이 아닌 지속적인 관심을 가져봐요</div>
-                    </div>
-                </div>
+        <div class="no-side-margin-row container">
+            <div class="body-title-font body-left mb-3">첫 모임에서 우리는</div>
+            <div class="body-description-font mb-3">
+                <p class="body-left" id="study-about-first">
+                    주식이 무엇인지에 대해서 공부<br>
+                    할 것이예요.<br>
+                    주식이라고 하면 오른쪽 사진처럼<br>
+                    차트부터 생각나나요?<br>
+                    하지만 주식의 차트는 정말 적은 부분에 해당되요.<br><br>
+
+                    주식으로 돈을 버는 방법이 무엇일까요?<br>
+                    내가 산 가격보다 다른 사람이 더 비싸게 사준다?<br>
+                    맞아요. 하지만 다른 방법도 있어요!<br><br>
+
+                    주식에 대해서 공부하다 보면<br>
+                    사람들이 간과하고 있는 주식의 주요한 부분들을 깨달을 수 있을 것 이예요.
+                </p>
+                <img class="img-fluid" align="right" id="stock-study-graph" src="/images/stock_study_graph.png" alt="">
             </div>
         </div>
     </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials text-center">
-        <div class="container">
-            <div class="mb-3 body-sub-title-font">재테크 성향 테스트</div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="testimonial-item mx-auto mb-3 mb-lg-0">
-                        <div id="financial-status-test">
-                            <div class="p-3">
-                                <div class="text-white mb-5 mt-3 body-title-font">현재 재테크 상태 확인</div>
-                                <div class="text-white align-middle mb-5 status">STATUS</div>
-                            </div>
-                            <div>
-                                <button type="button" class="survey-button text-right text-white" onclick="alertWeAreReady()">지금 바로 점검하기>></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                        <div id="financial-knowledge-test">
-                            <div class="p-3">
-                                <div class="text-white mb-5 mt-3 body-title-font">금융, 경제 지식 테스트</div>
-                                <div class="text-white align-middle mb-5 idea">IDEA</div>
-                            </div>
-                            <div>
-                                <button type="button" class="survey-button text-right text-white" onclick="alertWeAreReady()">지금 바로 점검하기>></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <hr class="fwc-background-color mt-2 mb-2">
+    <!-- Icons Grid -->
+    <section class="features-icons text-center">
+        <div class="no-side-margin-row container body-left">
+            <div class="body-title-font mb-3">첫 모임 주제에 대해서 생각해봐요</div>
+            <div class="no-margin-bottom-p body-content-font" style="display:flex;">
+                <img class="check-btn" align="left" src="/images/check-button.png" alt="" style="height: 45%;max-width: 15%;">
+                <p class="study-about-first">주식으로 돈을 버는 2가지 방법</p>
+            </div>
+            <div class="no-margin-bottom-p body-content-font" style="display:flex;">
+                <img class="check-btn" align="left" src="/images/check-button.png" alt="">
+                <p class="study-about-first">차트는 어떻게 읽을까요? 빨갛고 파란 건 알겠는데, 그 위에 뾰족한 것은 무엇이죠?</p>
+            </div>
+            <div class="no-margin-bottom-p body-content-font" style="display:flex;">
+                <img class="check-btn" align="left" src="/images/check-button.png" alt="">
+                <p class="study-about-first">주식 시장의 3대 주체. 개인, 외인, 기관 이들은 누구이며 어떻게 수급이 측정되는 것 일까요?</p>
+            </div>
+            <div class="no-margin-bottom-p body-content-font" style="display:flex;margin-bottom: 3vw;">
+                <img class="check-btn" align="left" src="/images/check-button.png" alt="">
+                <p class="study-about-first">주식시장은 몇 시부터 시작되고 끝나나요? 누구는 장 마감하고도 샀다는데 그건 어떻게 하는 건가요?</p>
             </div>
         </div>
     </section>
-
+    <hr class="fwc-background-color mt-2 mb-2">
     <!-- Image Showcases -->
     <section class="showcase mb-5">
         <div class="container">
@@ -221,13 +206,11 @@
                 <div class="col-lg-4">
                     <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                         <div class="container">
-                            <a class="nav-link" th:href="@{/studydetail/stock_begin}">
-                                <img class="img-fluid mb-1 study-subjects-img" src="/images/financial-statements.png" alt="">
-                                <div class="body-content-font text-left">[주식의 기본(초급)]</div>
-                                <div class="body-sub-description-font text-left">
-                                    처음 시작하는데 무작정 시작할 수는 없으니깐 나와 비슷한 사람들과 함께 차근차근
-                                </div>
-                            </a>
+                            <img class="img-fluid mb-1 study-subjects-img" src="/images/financial-statements.png" alt="">
+                            <div class="body-content-font text-left">[재무제표의 기초]</div>
+                            <div class="body-sub-description-font text-left">
+                                기업의 재무제표를 분석하여 기술적 분석을 통하여 기업가치 평가 및 주가 예측해요
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -235,11 +218,4 @@
         </div>
     </section>
 </div>
-<th:block layout:fragment="script">
-    <script th:inline="javascript">
-        function alertWeAreReady() {
-            alert('준비 중입니다.');
-        }
-    </script>
-</th:block>
 </html>

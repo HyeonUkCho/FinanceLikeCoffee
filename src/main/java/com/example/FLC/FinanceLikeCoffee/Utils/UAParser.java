@@ -4,17 +4,30 @@ import net.sf.uadetector.OperatingSystem;
 import net.sf.uadetector.ReadableUserAgent;
 import net.sf.uadetector.UserAgentStringParser;
 import net.sf.uadetector.service.UADetectorServiceFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.mobile.device.Device;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
+import ua_parser.Client;
+import ua_parser.Parser;
 
 import javax.servlet.http.HttpServletRequest;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 @Component
 public class UAParser {
 
+    private final Logger logger = LoggerFactory.getLogger(this.getClass().getSimpleName());
+
     UserAgentStringParser userAgentStringParser;
+
+    Parser uaParser;
 
     public UAParser() {
         this.userAgentStringParser = UADetectorServiceFactory.getResourceModuleParser();
+        this.uaParser = new Parser();
 
     }
     public String getClientRequestInfo(HttpServletRequest request) {
@@ -57,5 +70,51 @@ public class UAParser {
         // parser.parse(userAgent).getType(); // UserAgentFamily를 반환한다.
         // CHROME, CHROME_MOBILE, FIREFOX, MOBILE_FIREFOX, SAFARI, MOBILE_SAFARI, IE, IE_MOBILE, UNKNOWN 등을 반환한다.
         // parser.parse(userAgent).getFamily();
+    }
+
+    public String getClientRequestInfo2(HttpServletRequest request) {
+        String uaString = request.getHeader("User-Agent");
+        logger.info("User-agent : [" + uaString + "]");
+        Client c = uaParser.parse(uaString);
+        return c.userAgent.family + " / " + c.os.family + " / " + c.device.family;
+    }
+
+    public String checkPcOrMobileOrTablet(Device device) {
+        if (device.isMobile()) {
+            return "MOBILE";
+        } else if (device.isTablet()) {
+            return "TABLET";
+        } else {
+            return "PC";
+        }
+    }
+
+    public String getClientIp(HttpServletRequest request) {
+        String ip = request.getHeader("X-Forwarded-For");
+        logger.debug("> X-FORWARDED-FOR : " + ip);
+
+        if (ip == null) {
+            ip = request.getHeader("Proxy-Client-IP");
+            logger.debug("> Proxy-Client-IP : " + ip);
+        }
+        if (ip == null) {
+            ip = request.getHeader("WL-Proxy-Client-IP");
+            logger.debug(">  WL-Proxy-Client-IP : " + ip);
+        }
+        if (ip == null) {
+            ip = request.getHeader("HTTP_CLIENT_IP");
+            logger.debug("> HTTP_CLIENT_IP : " + ip);
+        }
+        if (ip == null) {
+            ip = request.getHeader("HTTP_X_FORWARDED_FOR");
+            logger.debug("> HTTP_X_FORWARDED_FOR : " + ip);
+        }
+        if (ip == null) {
+            ip = request.getRemoteAddr();
+            logger.debug("> getRemoteAddr : "+ip);
+        }
+        logger.debug("> Result : IP Address : "+ip);
+
+        return ip;
     }
 }
