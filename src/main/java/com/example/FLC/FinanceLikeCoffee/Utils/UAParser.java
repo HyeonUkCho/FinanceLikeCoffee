@@ -76,7 +76,9 @@ public class UAParser {
         String uaString = request.getHeader("User-Agent");
         logger.info("User-agent : [" + uaString + "]");
         Client c = uaParser.parse(uaString);
-        return c.userAgent.family + " / " + c.os.family + " / " + c.device.family;
+        String result = c.userAgent.family + " / " + c.os.family + " / " + c.device.family;
+        if(result == null) result = "";
+        return result;
     }
 
     public String checkPcOrMobileOrTablet(Device device) {
