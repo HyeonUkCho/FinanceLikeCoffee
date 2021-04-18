@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/default_layout">
+
+<div layout:fragment="content">
+
+    <!-- Masthead -->
+    <header class="masthead" id="FAQ">
+        <!--<div class="overlay"></div>-->
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="FAQ-title body-title-font mb-3">문의사항 있으신가요?</div>
+                    <div class="row">
+                        <div class="col-lg-6 text-center mb-2">
+                            <div class="body-sub-content-font">이메일</div>
+                            <div class="body-sub-content-font">ticklemickle20@gmail.com</div>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <div class="body-sub-content-font">카카오톡 채널</div>
+                            <div class="body-sub-content-font">금융을커피처럼</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Image Showcases -->
+    <section class="showcase mb-5">
+        <div class="container">
+            <div class="row">
+                <ul class="nav nav-pills mb-5 mx-auto FAQ-tab-container" id="pills-tab" role="tablist">
+                    <li class="tab-item">
+                        <a class="flex-sm-fill text-sm-center nav-link FAQ-btn active" id="pills-FAQ1-tab" data-toggle="pill" href="#pills-FAQ1" role="tab" aria-controls="pills-FAQ1" aria-selected="true">
+                            신청방법
+                        </a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="flex-sm-fill text-sm-center nav-link FAQ-btn" id="pills-FAQ2-tab" data-toggle="pill" href="#pills-FAQ2" role="tab" aria-controls="pills-FAQ2" aria-selected="false">
+                            진행방식
+                        </a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="flex-sm-fill text-sm-center nav-link FAQ-btn" id="pills-FAQ3-tab" data-toggle="pill" href="#pills-FAQ3" role="tab" aria-controls="pills-FAQ3" aria-selected="false">
+                            스터디원 선정방식
+                        </a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="flex-sm-fill text-sm-center nav-link FAQ-btn" id="pills-FAQ4-tab" data-toggle="pill" href="#pills-FAQ4" role="tab" aria-controls="pills-FAQ4" aria-selected="false">
+                            결제/비용
+                        </a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="flex-sm-fill text-sm-center nav-link FAQ-btn" id="pills-FAQ5-tab" data-toggle="pill" href="#pills-FAQ5" role="tab" aria-controls="pills-FAQ5" aria-selected="false">
+                            COVID-19
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-FAQ1" role="tabpanel" aria-labelledby="pills-FAQ1-tab">
+                            <div class="mb-5 QnA">
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. 신청방법이 어떻게 되나요?</div>
+                                <div class="margin-top-1rem body-QnA-font">홈페이지 신청하기 링크의 구글 설문 참여시 신청이 되며 내부 심사 기준에 따라 참석 가부 여부가 결정됩니다.</div>
+                            </div>
+                            <div class="mb-5 QnA">
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. 신청 절차 및 과정이 궁금해요</div>
+                                <div class="margin-top-1rem body-QnA-font">홈페이지 신청하기 링크로 신청한 고객에게 내부 심사 절차가 최대 1주일이 소요되며 PASS 혹은 FAIL 결과에 따라 스터디원이 구성되며, PASS 를 받은 스터디원간의 OT가 이뤄지고 나서 본인의 최종 결정에 따라 스터디가 구성됩니다.</div>
+                            </div>
+                            <div class="mb-5 QnA">
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. 신청하면 모두 참석 가능한 것이 아닌가요?</div>
+                                <div class="margin-top-1rem body-QnA-font">네, 신청 자체로 모두 스터디를 참석할 수 있는 것은 아닙니다.
+                                    스터디는 모임 목적과 주제 그리고 성향에 따라 만족도 차이가 큼으로 정밀한 내부 심사 결과에 따라 참석 가능이 결정됩니다.</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-FAQ2" role="tabpanel" aria-labelledby="pills-FAQ2-tab">
+                            <div class="mb-5 QnA">
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. 모임은 어디서 진행되나요?</div>
+                                <div class="margin-top-1rem body-QnA-font">모임은 인원은 희망 지역 주변에서 자유롭게 만날 수 있으며 별도의 요청이 없으면 서울 강남 지사가 위치한 공유오피스에서 공간대여 해드리고 있습니다.
+                                    시간 제한은 없으며, 간단한 다과 및 음료 무료로 제공합니다.</div>
+                            </div>
+                            <div class="mb-5 QnA">
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. 진행방식이 어떻게 되나요?</div>
+                                <div class="margin-top-1rem body-QnA-font">고객님와 유사하고 동일한 금융 고민을 하는 분들을 모집하여 스터디 그룹을 만듭니다. 스터디원은 최대 6명을 넘지 않으며 월 2회, 3달을 1시즌으로 구성하여 운영합니다.</div>
+                            </div>
+                            <div class="mb-5 QnA">
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. 스터디는 어떻게 진행되나요?</div>
+                                <div class="margin-top-1rem body-QnA-font">스터디원이 모여 토론하는 방식으로 진행되며 모임 2일전 자정까지 과제를 제출하여야 참석할 수 있습니다. 스터디는 자유토론 방식이며 2시간은 제출한 과제에 대한 토론, 그 이후 30분은 다음 주제에 대한 토론이 이뤄집니다.</div>
+                            </div>
+                            <div class="mb-5 QnA">
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. 과제 미제출시 어떻게 되나요?</div>
+                                <div class="margin-top-1rem body-QnA-font">과제는 해당 주의 스터디를 참석하기 위한 가장 중요한 요소로 미제출시 스터디 참석이 불가합니다. 전체 스터디원의 과반 이상이 미제출시 시즌 종료되고 남은 기간에 대한 비용 환불 처리됩니다.</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-FAQ3" role="tabpanel" aria-labelledby="pills-FAQ3-tab">
+                            <div class="mb-5 QnA">
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. 스터디원 선정되고 구성되는 기준이 어떻게 되나요?</div>
+                                <div class="margin-top-1rem body-QnA-font">홈페이지 신청하기 링크의 구글 설문 참여시 신청이 되며, 내부 심사 기준에 따라 참석 가부 여부가 결정됩니다.</div>
+                            </div>
+                            <div class="mb-5 QnA">
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. 내부 심사 기준은 무엇인가요?</div>
+                                <div class="margin-top-1rem body-QnA-font">소득, 부채, 성향, 지역 등 다양한 조건을 비교 분석하여 본인과 가장 유사하고 동일한 관심사를 갖고 있는 사람과 함께 할 수 있도록 심사가 이뤄지고 있습니다. 스터디 특성상 반드시 꾸준하고 성실하게 참여하시는 분에게 우선권을 드리고 있습니다.</div>
+                            </div>
+                            <div class="mb-5 QnA">
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. 친구(애인)와 함께 스터디 할 수 있나요?</div>
+                                <div class="margin-top-1rem body-QnA-font">네, 두 분이 함께 동의하시는 경우 같이 스터디 할 수 있도록 매칭 도와드리고 있습니다. </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-FAQ4" role="tabpanel" aria-labelledby="pills-FAQ4-tab">
+                            <div class="mb-5 QnA">
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. 비용은 어떻게 되나요?</div>
+                                <div class="margin-top-1rem body-QnA-font">1시즌은 3개월 동안 격주로 총 6회로 이뤄지며, 총 24만원 (회당 4만원) 입니다.</div>
+                            </div>
+                            <div class="mb-5 QnA">
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. 결제는 언제 어떻게 하나요?</div>
+                                <div class="margin-top-1rem body-QnA-font">결제는 스터디원이 모두 구성되고 나서 OT 참석 시점에 현장 결제하게 됩니다.</div>
+                            </div>
+                            <div class="mb-5 QnA">
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. 환불 가능 기간은 어떻게 되나요?</div>
+                                <div class="margin-top-1rem body-QnA-font">- 첫번째 모임 7일전까지 80% 환불<br>
+                                    - 두번째 모임 7일전까지 60% 환불<br>
+                                    - 세번째 모임 7일전까지 40% 환불<br>
+                                    - 네번째 모임 7일전까지 20% 환불<br>
+                                    이후 환불 불가</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-FAQ5" role="tabpanel" aria-labelledby="pills-FAQ5-tab">
+                            <div class="mb-5 QnA">
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. COVID-19 관련 운영 정책이 어떻게 되나요?</div>
+                                <div class="margin-top-1rem body-QnA-font">모든 모임은 질병관리본부의 코로나 예방 수칙을 철저히 지키며 진행되며, 모임 장소에 손소독제와 체온기가 비치되어 있습니다.
+                                    또한, 모임 동안 반드시 마스크를 착용하고 진행되며 고열시 모임 참석이 불가합니다.</div>
+                            </div>
+                            <div class="mb-5 QnA">
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. COVID-19 확진자 혹은 관련자 인 경우 어떻게 해야 하나요?</div>
+                                <div class="margin-top-1rem body-QnA-font">COVID-19 확진자 혹은 관련자(자가격리 대상자)인 경우, 모임 참석은 불가하며 전체 비용의 20%를 환불해드리고 있습니다.
+                                    본인이 대상자인 경우, 자가격리 통지서, 출입국증명서, 병원 소견서 등 관련 서류를 제출하여 증빙이 필수 조건입니다.</div>
+                            </div>
+                            <div class="mb-5 QnA">
+                                <div class="margin-top-1rem body-QnA-font mb-1">Q. 정부의 사회적 거리두기 단계별 가이드 라인이 어떻게 되나요?</div>
+                                <div class="margin-top-1rem body-QnA-font">금융을커피처럼은 기본적으로 6인 이하의 모임으로 구성되어 있으며 정부 지침이 이보다 소규모의 인원의 모임을 요구하는 경우, 전체 비용의 20% 환불 혹은 3인 이하 모임으로 분리 운영하고 있습니다.
+                                    상세한 추가 운영 방법에 대한 내용은 개별 통지 드리고 있습니다.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<th:block layout:fragment="script">
+    <script th:inline="javascript">
+        function alertWeAreReady() {
+            alert('준비 중입니다.');
+        }
+    </script>
+</th:block>
+
+</html>

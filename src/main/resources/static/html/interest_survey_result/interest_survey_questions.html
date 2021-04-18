@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
+
+		<link rel="stylesheet" href="../css/style.css">
+		<!-- 합쳐지고 최소화된 최신 CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+		<!-- 부가적인 테마 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+		<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+			
+	</head>
+	
+	<body id="interest_survey_questions_body" style="text-align:center">
+	
+		<div id="interest_survey_questions_wrapper">
+			
+			<div onclick="location.href='index.html';">	
+				<div id="interest_survey_mainlogo_img">
+					<img style="width:7rem;" src="/images/logo_1x.png"> 
+				</div>
+				<div id="interest_survey_mainlogo_text">
+					티끌미끌, 함께하는 금융수다	
+				</div>		
+			</div>
+			
+			
+			<div>
+
+				<!-- Question 1 -->
+				<div class="interest_survey_questions_main" style="width:100%; text-align:center;">
+					
+					<div class="INT_SURV_QUEST_main_text">
+						추천받은 주식을 오전에 샀는데<br>오후에 15% 상승했다
+					</div> 
+					
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(-1)">
+						판다
+					</button>
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(1)">
+						안판다
+					</button>
+					
+					<div class="question_progress_common">
+						<div class="progress" id="question_progress">
+						  <div class="progress-bar" role="progressbar" style="width: 8.4%;" id="question_progress_bar" ></div>
+						</div>				
+					</div>
+					<div class="INT_SURV_QUEST_progress_text">
+						 1/12
+					</div>
+				</div>
+ 
+				<!-- Question 2 -->
+				<div class="interest_survey_questions_main" style="width:100%; text-align:center; display:none;">
+					<div class="INT_SURV_QUEST_main_text">
+						1년에 1천만원을 투자해서<br>10% 수익(100만원)을 났다
+					</div> 
+					
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(-1)">
+						그정도 벌꺼면<br>주식을 왜하나
+					</button>
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(1)">
+						이정도면<br>엄청 잘한 것 같다
+					</button>
+					
+					<div class="question_progress_common">
+						<div class="progress" id="question_progress">
+						  <div class="progress-bar" role="progressbar" style="width: 16.8%;" id="question_progress_bar" ></div>
+						</div>				
+					</div>
+					<div class="INT_SURV_QUEST_progress_text">
+						 2/12
+					</div>
+				</div>
+
+				<!-- Question 3 -->
+				<div class="interest_survey_questions_main" style="width:100%; text-align:center; display:none;">
+					<div class="INT_SURV_QUEST_main_text">
+						오늘은 상승장이었다<br>그러나 장에서 외인과 기관이 판다
+					</div> 
+
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(-1)">
+						외인과 기관은<br>항상 파니 괜찮다
+					</button>
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(1)">
+						조정의<br>조짐이 보인다
+					</button>
+					
+					<div class="question_progress_common">
+						<div class="progress" id="question_progress">
+						  <div class="progress-bar" role="progressbar" style="width: 25.2%;" id="question_progress_bar" ></div>
+						</div>				
+					</div>
+					<div class="INT_SURV_QUEST_progress_text">
+						 3/12
+					</div>
+				</div>
+				
+				<!-- Question 4 -->
+				<div class="interest_survey_questions_main" style="width:100%; text-align:center; display:none;">
+					<div class="INT_SURV_QUEST_main_text">
+						투자한 지 한달 된 종목의 수익률이<br>마이너스 15~20% 이다
+					</div> 
+
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(-1)">
+						추매로<br>평단을 낮춘다
+					</button>
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(1)">
+						잘못된 판단임으로<br>손절을 한다
+					</button>
+					
+					<div class="question_progress_common">
+						<div class="progress" id="question_progress">
+						  <div class="progress-bar" role="progressbar" style="width: 33.6%;" id="question_progress_bar" ></div>
+						</div>				
+					</div>
+					<div class="INT_SURV_QUEST_progress_text">
+						 4/12
+					</div>
+				</div>
+				
+				<!-- Question 5 -->
+				<div class="interest_survey_questions_main" style="width:100%; text-align:center; display:none;">
+					<div class="INT_SURV_QUEST_main_text">
+						나는 보통 주식을 한번 사면
+					</div> 
+
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(-1)">
+						6개월 내로 매도하고<br>재매수하는 편이다
+					</button>
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(1)">
+						6개월 보다는 오래 두고<br>보며 매도하는 편이다
+					</button>
+					
+					<div class="question_progress_common">
+						<div class="progress" id="question_progress">
+						  <div class="progress-bar" role="progressbar" style="width: 42%;" id="question_progress_bar" ></div>
+						</div>				
+					</div>
+					<div class="INT_SURV_QUEST_progress_text">
+						 5/12
+					</div>
+				</div>
+				
+				<!-- Question 6 -->
+				<div class="interest_survey_questions_main" style="width:100%; text-align:center; display:none;">
+					<div class="INT_SURV_QUEST_main_text">
+						주식 공부를
+					</div> 
+
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(-1)">
+						뉴스와 유튜브를 보면서<br>분석한 내용을 공부한다
+					</button>
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(1)">
+						환율, 채권금리,<br>애널리스트 보고서를<br>중심으로 공부한다
+					</button>
+					
+					<div class="question_progress_common">
+						<div class="progress" id="question_progress">
+						  <div class="progress-bar" role="progressbar" style="width: 50.4%;" id="question_progress_bar" ></div>
+						</div>				
+					</div>
+					<div class="INT_SURV_QUEST_progress_text">
+						 6/12
+					</div>
+				</div>
+				
+				<!-- Question 7 -->
+				<div class="interest_survey_questions_main" style="width:100%; text-align:center; display:none;">
+					<div class="INT_SURV_QUEST_main_text">
+						어디 가서<br>주식 이야기하면 
+					</div> 
+
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(-1)">
+						대화를 이끈다
+					</button>
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(1)">
+						조용히 듣는다	
+					</button>
+					
+					<div class="question_progress_common">
+						<div class="progress" id="question_progress">
+						  <div class="progress-bar" role="progressbar" style="width: 58.8%;" id="question_progress_bar" ></div>
+						</div>				
+					</div>
+					<div class="INT_SURV_QUEST_progress_text">
+						 7/12
+					</div>
+				</div>
+				
+				<!-- Question 8 -->
+				<div class="interest_survey_questions_main" style="width:100%; text-align:center; display:none;">
+					<div class="INT_SURV_QUEST_main_text">
+						주식 투자 자금은
+					</div> 
+
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(-1)">
+						자금이 생기거나<br>마음에 드는 종목이<br>생기면 투자
+					</button>
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(1)">
+						정확하게 분배한<br>포트폴리오를<br>계산하여 투자
+					</button>
+					
+					<div class="question_progress_common">
+						<div class="progress" id="question_progress">
+						  <div class="progress-bar" role="progressbar" style="width: 67.2%;" id="question_progress_bar" ></div>
+						</div>				
+					</div>
+					<div class="INT_SURV_QUEST_progress_text">
+						 8/12
+					</div>
+				</div>
+				
+				<!-- Question 9 -->
+				<div class="interest_survey_questions_main" style="width:100%; text-align:center; display:none;">
+					<div class="INT_SURV_QUEST_main_text">
+						내가 매수를 하는 타이밍은
+					</div> 
+
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(-1)">
+						그냥 내가 사고 싶을 때
+					</button>
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(1)">
+						호재나 악재로<br>주가가 흔들릴 때
+					</button>
+					
+					<div class="question_progress_common">
+						<div class="progress" id="question_progress">
+						  <div class="progress-bar" role="progressbar" style="width: 75.6%;" id="question_progress_bar" ></div>
+						</div>				
+					</div>
+					<div class="INT_SURV_QUEST_progress_text">
+						 9/12
+					</div>
+				</div>
+				
+				<!-- Question 10 -->
+				<div class="interest_survey_questions_main" style="width:100%; text-align:center; display:none;">
+					<div class="INT_SURV_QUEST_main_text">
+						현재 보유하고 있는<br>종목의 수가 5개보다
+					</div> 
+
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(-1)">
+						많다
+					</button>
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(1)">
+						적다
+					</button>
+					
+					<div class="question_progress_common">
+						<div class="progress" id="question_progress">
+						  <div class="progress-bar" role="progressbar" style="width: 84%;" id="question_progress_bar" ></div>
+						</div>				
+					</div>
+					<div class="INT_SURV_QUEST_progress_text">
+						 10/12
+					</div>
+				</div>
+				
+				<!-- Question 11 -->
+				<div class="interest_survey_questions_main" style="width:100%; text-align:center; display:none;">
+					<div class="INT_SURV_QUEST_main_text">
+						주식은
+					</div> 
+
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(-1)">
+						운 30%, 실력 70%
+					</button>
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(1)">
+						실력 70%, 운 30%
+					</button>
+					
+					<div class="question_progress_common">
+						<div class="progress" id="question_progress">
+						  <div class="progress-bar" role="progressbar" style="width: 92.4%;" id="question_progress_bar" ></div>
+						</div>				
+					</div>
+					<div class="INT_SURV_QUEST_progress_text">
+						 11/12
+					</div>
+				</div>
+				
+				<!-- Question 12 -->
+				<div class="interest_survey_questions_main" style="width:100%; text-align:center; display:none;">
+					<div class="INT_SURV_QUEST_main_text">
+						전체적으로 장이 흐른다<br>그런데 친구가 추천한 종목만 오른다
+					</div> 
+
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(-1)">
+						역시 이 친구…<br>평생 함께 간다 
+					</button>
+					<button id="INT_SURV_QUEST_button_common" onclick="plusDivs(1)">
+						오른 이유에 대해<br>혼자 공부한다
+					</button>
+					
+					<div class="question_progress_common">
+						<div class="progress" id="question_progress">
+						  <div class="progress-bar" role="progressbar" style="width: 100%;" id="question_progress_bar" ></div>
+						</div>				
+					</div>
+					<div class="INT_SURV_QUEST_progress_text">
+						 12/12
+					</div>
+				</div>
+					
+				
+				
+				<!-- Progree ongoing loader -->
+				<div class="interest_survey_questions_main" style="width:100%; text-align:center; display:none; margin:40px 0px 30px 0px;">
+					<div>
+						<div class="loader" style="margin-top:200px;"></div>
+						<!-- After loading-->
+						<div id="interest_survey_result" style="display:none;"> </div> 
+					</div> 
+				</div>
+				
+				
+				
+				<div id="question_footer">
+					<img style="max-width:100%;" src="/images/img_bottom_introduce_mobile.png"> 
+				</div>
+				<!-- 
+			  <button type="button" class="btn" onclick="plusDivs(-1)">&#10094;</button>
+			  <button type="button" class="btn" onclick="plusDivs(1)">&#10095;</button>
+				-->
+			</div>	
+		</div> 
+		
+		
+		
+		
+		<script>		
+			
+			
+			var slideIndex = 1;
+			var x = document.getElementsByClassName("interest_survey_questions_main");
+			var sumTotal = x.length - 1;
+			
+			showDivs(slideIndex, 0);
+			
+			function plusDivs(n) {
+			  showDivs(slideIndex += 1, n);
+			}
+
+			function showDivs(n, score) {
+				var i;
+			  	
+				sumTotal += score;
+				
+				//마지막에서 되돌아오려면 여기
+			  	if (n > x.length) {
+					slideIndex = 1;
+				}
+				//처음이면 여기
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+				}
+				//alert("x " + x.length + " n: " + n + " slideIndex: " + slideIndex + " sumTotal: " + sumTotal);
+				x[slideIndex-1].style.display = "block";   	
+				//마지막이면 여기
+				if(n == x.length){
+					
+					chooseResult(sumTotal);
+				    setTimeout(closeLoadingWithMask, 2500);
+					
+					function closeLoadingWithMask() {
+						$('.loader').hide();
+						$('#question_footer').hide();
+						$('#interest_survey_result').show(); 
+					}
+				}
+			
+			}
+			
+			//$(document).ready( function() {
+			function chooseResult(sumTotal) {
+				// score range: 0 ~ 24 
+				// each question: +- 2 score 
+				switch(true){
+					case (sumTotal>21):
+$("#interest_survey_result").load("/html/interest_survey_result/interest_survey_result_buffett.html");
+						break;
+					case (sumTotal>17):
+$("#interest_survey_result").load("/html/interest_survey_result/interest_survey_result_bill.html");
+							break;
+					case (sumTotal>14):
+$("#interest_survey_result").load("/html/interest_survey_result/interest_survey_result_musk.html");
+							break;
+					case (sumTotal>11):
+$("#interest_survey_result").load("/html/interest_survey_result/interest_survey_result_kylie.html");
+							break;
+					case (sumTotal>8):
+$("#interest_survey_result").load("/html/interest_survey_result/interest_survey_result_SJE.html");
+							break;
+					case (sumTotal>5):
+$("#interest_survey_result").load("/html/interest_survey_result/interest_survey_result_mayweather.html");
+							break;
+					default :
+$("#interest_survey_result").load("/html/interest_survey_result/interest_survey_result_poor.html");
+						
+				}
+			}
+			//});
+			
+		</script>
+
+	</body>
+</html>

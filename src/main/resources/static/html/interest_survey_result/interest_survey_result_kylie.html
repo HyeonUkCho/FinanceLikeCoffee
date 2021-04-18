@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<script type="text/javascript" src="https://developers.kakao.com/sdk/js/kakao.js"> </script>
+		
+		<script type="text/javascript" src="kakao_open_api.js"> </script>
+		
+		
+	</head>
+	
+	<body>
+		
+		<div>
+			<img style="max-width:100%;" src="/images/result_kylie.png"> 
+		</div>
+		
+		<div id="ISR_title">
+			<span id="ISR_sub_title">
+				당신의 투자 성향은
+			</span>
+			<br>
+			<span id="ISR_main_title">
+				뛰어난 브랜딩 카일리 제너
+			</span>
+		</div>
+		
+		<div id="ISR_procent_common">
+			<hr id="hr_inlin3">
+				<div id="ISR_procent_name">희귀성 8%</div>
+			<hr id="hr_inlin3">	
+		</div>
+		
+		
+		<div class="ISR_question_common">
+			<div style="margin:10px 0px;">
+				<img style="max-width:30px;" src="/images/beautiful_stick.png"> 
+				<span class="ISR_personality_main">당신의 성격은?</span>
+			</div>
+			<div>
+				나만의 스타일과 브랜딩을 갖고 투자를 하시네요! <br>
+21세에 최연소 억만장자가 된 그녀와 매우 닮은 점이 많으시네요!  <br>
+당신과 어울리는 투자 섹터는 <b>엔터, 쇼핑, 유통</b> 등이 있으며 자신만의 기호성을 갖고 있는 기업에 투자하는 것이 어울리는 투자자입니다. <br>
+나의 실생활에 가장 밀접하게 사용되고 있는 상품이나 서비스를 중심으로 생각해서 어떠한 기업과 종목이 상승하게 될 지를 고민하고 투자해보세요! <br>
+다만, 다소 공격적이고 한 바구니에 모두 달걀을 담는 실수는 조심하시길 바랍니다. 한 순간에 쾌락이 나락으로 이끌 수 있으니 인덴스 투자 방법에 대해서도 한 번 공부해보세요. <br>
+			</div>
+		</div>
+		
+		
+		<div class="ISR_question_common">
+			<div style="margin:10px 0px;">
+				<img style="max-width:30px;" src="/images/beautiful_stick.png"> 
+				<span class="ISR_personality_main">주의해야 할 점</span>
+			</div>
+			<div>
+다소 개인적이고 이기적이라는 이야기를 들을 수도 있습니다.<br>
+당신의 멋짐 폭발은 모두 다 알고 있기에 조금은 겸손해지는 것을 추천드립니다.<br>
+높은 수익률을 말하고 다닐 수 있겠지만, 모든 종목을 수익만 낼 수는 없기에 리스크를 헤징하고 앞으로 어떻게 더 좋은 습관을 만들지 함께 고민할 필요가 있어보입니다.<br>
+항상 남들의 말에 조금 더 귀기울이고 수익이 날 수록 겸손해지며 항상 시장앞에 배우는 자세로 투자해보는 것은 어떨까요? <br>
+			</div>
+		</div>
+		
+		<div style="text-align:center;">
+			<button class="ISR_kakao_button" id="ISR_kakao_linkbtn" 
+								onclick="sendLinkCustom()">
+				카카오톡으로 공유하기
+			</button>	
+		</div>
+		<div style="text-align:center;">
+			<button class="ISR_retest_button" 
+								onclick="location.href='/interest_survey';">
+				테스트 다시 해보기
+			</button>
+		</div>
+		
+		<div id="ISR_last_homepage_common" onclick="location.href='/';">
+			<img style="width:50px;" src="/images/img_mikkle_qna.png"> 
+			<a><u> 티끌미끌에서 금융수다 하러가기 </u></a>
+		</div>		
+		
+	</body>
+</html>

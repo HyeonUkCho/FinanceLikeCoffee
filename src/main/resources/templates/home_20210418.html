@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/default_layout">
+
+<div layout:fragment="content">
+
+    <!-- Masthead -->
+    <header class="masthead" id="main">
+        <!--<img class="img-fluid" id="main-header-img" src="/images/fill-me-with-finance.png" alt="">-->
+        <div class="container" id="masthead-container">
+            <div class="row">
+
+                <div class="col-xl-12 body-title-font body-center" style="margin-top: 5vw;margin-bottom: 3vw;">남들은 어떻게 해요?</div>
+
+                <div class="col-xl-12 no-margin-bottom-p body-content-font body-center">비슷한 사람들과 함께 지식을 공유하는 공간</div>
+                <div class="col-xl-12 no-margin-bottom-p body-content-font body-center">처음이기에 모르고 헷갈리는 돈 이야기,</div>
+                <div class="col-xl-12 no-margin-bottom-p body-content-font body-center" style="margin-bottom: 3vw;">나와 딱 맞는 재테크 스터디 시작해요</div>
+
+
+                <div class="col-md-4 body-center btn-margin">
+                    <button type="button" class="btn btn-block btn-lg text-white btn-margin" id="regist-study-btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf87SzwjT0nObgY_r4IhPlBiJY6h-W-2OYhyj-5C9nEH4nRwg/viewform')">
+                        스터디 신청하기
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Masthead 2-->
+    <header class="masthead" id="main2">
+        <!--<img class="img-fluid" id="main-header-img" src="/images/fill-me-with-finance.png" alt="">-->
+        <div class="container" id="masthead-container2">
+            <div class="row body-center">
+                <div class="col-xl-12">
+                    <div class="body-title-font" style="margin-top: 5vw;margin-bottom: 3vw;">재테크 공부,<br>어떻게 시작해야 하는 걸까요?</div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="no-margin-bottom-p body-content-font">책 읽고 유튜브 보고</div>
+                    <div class="no-margin-bottom-p body-content-font" style="margin-bottom: 3vw;">혼자 고민하지 말고 함께 시작해요</div>
+                </div>
+                <div class="col-md-12 col-lg-12 col-xl-12 mt-1">
+
+                        <div class="col-md-4 no-padding body-center btn-margin">
+                            <a class="nav-link body-center" th:href="@{/FAQ}">
+                                <button type="button" class="btn btn-block btn-lg text-white btn-margin" id="go-faq-btn">
+                                    자주 묻는 질문
+                                </button>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Icons Grid -->
+    <section class="features-icons text-center">
+        <div class="container">
+            <div class="body-sub-title-font">재테크 스터디</div>
+            <div class="body-sub-title-font mb-3">경제 근육을 함께 키워봐요</div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-3 mb-lg-0">
+                        <img class="img-fluid mb-1" id="together" src="/images/together.png" alt="">
+                        <div class="body-sub-content-font">나와 비슷한 사람들의 금융 생활은 어떨까?</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-3 mb-lg-0">
+                        <img class="img-fluid mb-1" id="glass" src="/images/glass.png" alt="">
+                        <div class="body-sub-content-font">혼자 공부하면 꾸준히 하기 힘드니까</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-3 mb-lg-0">
+                        <img class="img-fluid mb-1" id="continue" src="/images/continue.png" alt="">
+                        <div class="body-sub-content-font">순간이 아닌 지속적인 관심을 가져봐요</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials text-center">
+        <div class="container">
+            <div class="mb-3 body-sub-title-font">재테크 성향 테스트</div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="testimonial-item mx-auto mb-3 mb-lg-0">
+                        <div id="financial-status-test">
+                            <div class="p-3">
+                                <div class="text-white mb-5 mt-3 body-title-font">현재 재테크 상태 확인</div>
+                                <div class="text-white align-middle mb-5 status">STATUS</div>
+                            </div>
+                            <div>
+                                <button type="button" class="survey-button text-right text-white" onclick="alertWeAreReady()">지금 바로 점검하기>></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <div id="financial-knowledge-test">
+                            <div class="p-3">
+                                <div class="text-white mb-5 mt-3 body-title-font">금융, 경제 지식 테스트</div>
+                                <div class="text-white align-middle mb-5 idea">IDEA</div>
+                            </div>
+                            <div>
+                                <button type="button" class="survey-button text-right text-white" onclick="alertWeAreReady()">지금 바로 점검하기>></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Showcases -->
+    <section class="showcase mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 showcase-text">
+                    <div class="body-sub-title-font fwc-color mb-2">Grouping</div>
+                    <div class="body-sub-title-font mb-2">On-Off 2중 점검을 통한<br>정확한 설문 답변</div>
+                    <div class="body-description-font mb-0">맞춤 추천 알고리즘을 통한 나와 유사한 사람들과 그룹핑해줍니다.
+                        현재 상태, 재테크 패턴, 관심사 설문을 모두 솔직하게 참여해야 나와 가장 비슷한 사람들과 함께 할 수 있어요.</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 showcase-text">
+                    <div class="body-sub-title-font fwc-color mb-2">Meet</div>
+                    <div class="body-sub-title-font mb-2">나와 관심사가<br>비슷한 사람들과 만나보세요</div>
+                    <div class="body-description-font mb-0">처음 만난 사람들과 낯부끄러운 돈 이야기, 잘 할 수 있을까요?<br>
+                        소수의 사람들이 한 곳에 모여 솔직한 나의 모습을 보여주다 보면 한 없이 가까워진 나의 모습을 볼 수 있어요.</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 showcase-text">
+                    <div class="body-sub-title-font fwc-color mb-2">Discuss</div>
+                    <div class="body-sub-title-font mb-2">정돈되고 준비된<br>대화를 통해 성장해요</div>
+                    <div class="body-description-font mb-0">2달 동안 나와 비슷한 사람들과 모여 서로의 재테크에 대해 대화하고 나눠봐요.
+                        각자 준비한 내용을 공유하다 보면 시간이 가는 줄 모를 거예요!</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 showcase-text">
+                    <div class="body-sub-title-font fwc-color mb-2">Study</div>
+                    <div class="body-sub-title-font mb-2">지식은 꾸준한 공부와<br>관심으로 쌓을 수 있어요</div>
+                    <div class="body-description-font mb-0">다음 모임까지 준비된 주제를 각자 공부해요.<br>
+                        공부하는 방법은 나에게 편한 방법을 선택해서 하면 되요.<br>
+                        유튜브, 구글, 네이버, 책 등 다양한 방법으로 공부할 수록 풍성한 이야기가 될 수 있어요.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Icons Grid -->
+    <section class="study-subjects-features-icons text-center">
+        <div class="container">
+            <div class="body-sub-title-font mb-5">스터디 주제</div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <div class="container">
+                            <img class="img-fluid mb-1 study-subjects-img" src="/images/finance-with-movie.png" alt="">
+                            <div class="body-content-font text-left">[영화로 보는 경제 이슈]</div>
+                            <div class="body-sub-description-font text-left">
+                                2008년 금융위기, 외환은행 헐값 매각 사건 등 다양한 경제 이슈를 영화로 만나봐요!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <div class="container">
+                            <img class="img-fluid mb-1 study-subjects-img" src="/images/finance-with-book.png" alt="">
+                            <div class="body-content-font text-left">[책으로 이해하는 금융 역사]</div>
+                            <div class="body-sub-description-font text-left">
+                                환율전쟁, 셰일혁명이 미국의 패권을 어떻게 유지할 것인지 등 깊고 심도있는 이야기
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <div class="container">
+                            <img class="img-fluid mb-1 study-subjects-img" src="/images/finance-with-realestate.png" alt="">
+                            <div class="body-content-font text-left">[부동산 불패 기초반 1]</div>
+                            <div class="body-sub-description-font text-left">
+                                부동산 매수할 수 있는 방법은 무엇이 있을까요? 씨드 없이도 부동산 공부하기
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <div class="container">
+                            <img class="img-fluid mb-1 study-subjects-img" src="/images/finance-goods.png" alt="">
+                            <div class="body-content-font text-left">[금융 산업과 상품]</div>
+                            <div class="body-sub-description-font text-left">
+                                예적금부터 주식, 펀드, 채권 등 여러 금융 상품을 알아보고 나와 가장 맞는 상품을 찾아봐요
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <div class="container">
+                            <img class="img-fluid mb-1 study-subjects-img" src="/images/finance-with-news.png" alt="">
+                            <div class="body-content-font text-left">[기사와 칼럼]</div>
+                            <div class="body-sub-description-font text-left">
+                                매주 경제 신문을 읽고 가장 관심있는 주제로 토론하고 대화해요
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <div class="container">
+                            <a class="nav-link" th:href="@{/studydetail/stock_begin}">
+                                <img class="img-fluid mb-1 study-subjects-img" src="/images/financial-statements.png" alt="">
+                                <div class="body-content-font text-left">[주식의 기본(초급)]</div>
+                                <div class="body-sub-description-font text-left">
+                                    처음 시작하는데 무작정 시작할 수는 없으니깐 나와 비슷한 사람들과 함께 차근차근
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<th:block layout:fragment="script">
+    <script th:inline="javascript">
+        function alertWeAreReady() {
+            alert('준비 중입니다.');
+        }
+    </script>
+</th:block>
+</html>

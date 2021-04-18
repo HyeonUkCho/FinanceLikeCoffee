@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="28" viewBox="0 0 100 28">
+    <defs>
+        <style>
+            .cls-2{fill:#fff;stroke:#fff;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="그룹_80" transform="translate(-128 -82)">
+        <path id="사각형_1" fill="#7900ab" d="M0 0H100V28H0z" transform="translate(128 82)"/>
+        <g id="그룹_2" transform="translate(136.069 88.263)">
+            <g id="그룹_1">
+                <path id="패스_1" d="M1301.173 758.312h-18.542V743.2h18.3v3.191h-14.539v2.8h14.208v3.131h-14.208v2.8h14.78z" class="cls-2" transform="translate(-1282.631 -743.201)"/>
+                <path id="패스_2" d="M1341.771 758.359V746.71h-6.141v-3.221h9.933v14.87zm8.071 0V746.71h-5.6v-3.221h9.394v14.87z" class="cls-2" transform="translate(-1313.473 -743.369)"/>
+                <path id="패스_3" d="M1388.062 758.323v-15.05h18.181v15.05zm14.388-11.83h-10.6v8.607h10.6z" class="cls-2" transform="translate(-1343.567 -743.243)"/>
+                <path id="패스_4" d="M1445.634 758.431v-11.649h-6.141v-3.221h9.933v14.87zm8.071 0v-11.649h-5.6v-3.221h9.394v14.87z" class="cls-2" transform="translate(-1373.496 -743.41)"/>
+            </g>
+        </g>
+    </g>
+</svg>

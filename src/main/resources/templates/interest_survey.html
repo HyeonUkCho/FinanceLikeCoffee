@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/mbti_layout">
+
+<div layout:fragment="content">
+
+    <div id="interest_survey_start_main">
+
+        <div onclick="location.href='/';">
+            <div id="interest_survey_mainlogo_img">
+                <img style="width:7rem;" src="/images/logo_1x.png">
+            </div>
+            <a id="interest_survey_mainlogo_text">
+                티끌미끌, 함께하는 금융수다
+            </a>
+        </div>
+        <img id="INT_SURV_main_img" style="width:25rem" src="/images/img_main_character_mobile.png">
+
+        <div id="INT_SURV_main_text">
+            나의 재테크 성향은?
+        </div>
+
+        <div id="INT_SURV_sub_text">
+            MBTI 성격 유형만큼<br>
+            사람마다 다른 재테크 성향!<br>
+            나의 재테크 성향을 알아보고<br>
+            재테크 스터디를 함께할 친구를 찾아보아요!<br>
+        </div>
+
+        <button id="INT_SURV_start_button">
+            테스트 시작하기
+        </button>
+
+    </div>
+
+    <div id="interest_survey_start_questions" style="display:none;">
+    </div>
+</div>
+<th:block layout:fragment="script">
+    <script th:inline="javascript">
+        $(document).ready( function() {
+            $("#interest_survey_start_questions").load("/html/interest_survey_result/interest_survey_questions.html");
+        });
+
+        $(function(){
+            $("#INT_SURV_start_button").click(function(){
+                $("#interest_survey_start_questions").show();
+                $("#interest_survey_start_main").hide();
+            })
+        } );
+    </script>
+</th:block>
+</html>

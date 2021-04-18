@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<script type="text/javascript" src="https://developers.kakao.com/sdk/js/kakao.js"> </script>
+		
+		<script type="text/javascript" src="kakao_open_api.js"> </script>
+		
+		
+	</head>
+	
+	<body>
+		
+		<div>
+			<img style="max-width:100%;" src="/images/result_buffett.png"> 
+		</div>
+		
+		<div id="ISR_title">
+			<span id="ISR_sub_title">
+				당신의 투자 성향은
+			</span>
+			<br>
+			<span id="ISR_main_title">
+				전설의 투자자 워렌버핏
+			</span>
+		</div>
+		
+		<div id="ISR_procent_common">
+			<hr id="hr_inlin3">
+				<div id="ISR_procent_name">희귀성 16%</div>
+			<hr id="hr_inlin3">	
+		</div>
+		
+		
+		<div class="ISR_question_common">
+			<div style="margin:10px 0px;">
+				<img style="max-width:30px;" src="/images/beautiful_stick.png"> 
+				<span class="ISR_personality_main">당신의 성격은?</span>
+			</div>
+			<div>
+				10년이상 보유하지 않으려면 단 10분도 보유하지 마라' 라는 명언으로도 유명한 투자자! <br>
+당신은 정말 현명한 투자자 인 것 같군요! 가치투자의 대가인 워렌버핏과 매우 닮은 점이 많네요! <br>
+당신과 어울리는  투자 섹터는 항공사, 카지노, 백화점 등이 있으며 저평가된 기업을 면밀히 분석하여 장기투자를 하는 것이 가장 적합한 성격입니다. <br>
+소형주보다는 대형주에 꾸준히 투자하는 것을 추천드리며 한국보다는 미국주식의 우량주를 공략해보는 것은 어떨까요?  <br>
+특히 전체 자산에서 현금보유량을 극대화시켰다가 금융 위기 시점에 공격적으로 투자하는 버핏의 투자성을 한 번 배워보도록 해요! 
+			</div>
+		</div>
+		
+		
+		<div class="ISR_question_common">
+			<div style="margin:10px 0px;">
+				<img style="max-width:30px;" src="/images/beautiful_stick.png"> 
+				<span class="ISR_personality_main">주의해야 할 점</span>
+			</div>
+			<div>
+어쩌면 당신은 태어났을 때부터 부유한 집안에서 자랐을 수도 있어요. <br>
+남들보다 좋은 환경에서 시작하고 있는 만큼 조금만 더 공부하고 노력한다면 스스로 경제 근육을 쌓을 수 있는 계기가 될 수 있어보입니다! <br>
+또한, 조용하고 차분한 성격을 갖고 있기에 남들과 소통하고 의견을 조율하면서 함께 융화하는 모습도 중요해보여요.  <br>
+때로는 완벽하게 분석하고 공부한 내용이 틀릴 수도 있기에 항상 조심하고 공부하는 자세로 시장을 바라보는 자세도 필요해보입니다! 
+			</div>
+		</div>
+		
+		<div style="text-align:center;">
+			<button class="ISR_kakao_button" id="ISR_kakao_linkbtn" 
+								onclick="sendLinkCustom()">
+				카카오톡으로 공유하기
+			</button>	
+		</div>
+		<div style="text-align:center;">
+			<button class="ISR_retest_button" 
+								onclick="location.href='/interest_survey';">
+				테스트 다시 해보기
+			</button>
+		</div>
+		
+		<div id="ISR_last_homepage_common" onclick="location.href='/';">
+			<img style="width:50px;" src="/images/img_mikkle_qna.png"> 
+			<a><u> 티끌미끌에서 금융수다 하러가기 </u></a>
+		</div>		
+		
+	</body>
+</html>

@@ -2,32 +2,41 @@
       xmlns:th="http://www.thymeleaf.org">
 
 <!--headerFragment 선언-->
-<div th:fragment="headerFragment">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light" id="fwc-navbar">
-        <div class="container">
-            <a class="navbar-brand" th:href="@{/}"><p id="fwc-navbar-brand-logo"><span class="fwc-navbar-brand-big-title">금융</span>을<span class="fwc-navbar-brand-big-title">커피</span>처럼</p></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2"  id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="fwc-nav-item text-center">
-                        <a class="nav-link" th:href="@{/about}">소개</a>
-                    </li>
-                    <li class="fwc-nav-item text-center">
-                        <a class="nav-link" href="#" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf87SzwjT0nObgY_r4IhPlBiJY6h-W-2OYhyj-5C9nEH4nRwg/viewform')">
-                            스터디 신청
-                        </a>
-                    </li>
-                    <li class="fwc-nav-item text-center">
-                        <a class="nav-link" href="#" onclick="alertWeAreReady()">성향 테스트</a>
-                    </li>
-                    <li class="fwc-nav-item text-center">
-                        <a class="nav-link" th:href="@{/FAQ}">FAQ</a>
-                    </li>
-                </ul>
+<div class="nav_wrap" th:fragment="headerFragment">
+    <!-- Navigation-->
+    <nav id="myhead_nav">
+        <div class="side_align_container container-fluid ">
+
+            <div id="index_main_home" class="col-lg-4 col-xs-12 nav_padding" onclick="location.href='/';">
+                <img style="width:7rem;" src="/images/logo_1x.png">
+                <span id="nav_head"> 티끌미끌 : 함께하는 금융수다 </span>
             </div>
+
+            <div class="col-lg-4 col-xs-0 nav_padding">   </div>
+
+            <hr class="side_align_container hr_head_mobile" id="hr_outline2">
+
+            <div class="col-lg-4 col-xs-12 nav_padding">
+
+                <div class="col-lg-3 col-xs-3 nav_content_detail_left">
+                    <a class="navhead_content" th:href="@{/about}">소개</a>
+                </div>
+
+                <div class="col-lg-3 col-xs-3 nav_content_detail_left">
+                    <a class="navhead_content" th:href="@{/}">스터디 신청</a>
+                </div>
+
+                <div class="col-lg-3 col-xs-3 nav_content_detail_right">
+                    <a class="navhead_content" th:href="@{/interest_survey}">성향 분석</a>
+                </div>
+
+                <div class="col-lg-3 col-xs-3 nav_content_detail_right">
+                    <a class="navhead_content" th:href="@{/FAQ}">FAQ</a>
+                </div>
+            </div>
+
+            <hr class="side_align_container hr_head_pc" id="hr_outline2">
+
         </div>
     </nav>
 </div>

@@ -50,4 +50,11 @@ public class HomeController {
         homeService.saveVisitLog(request,device,"agree");
         return "agree";
     }
+
+    @GetMapping("/interest_survey")
+    public String survey(Model model, HttpServletRequest request, Device device) {
+        logger.info("survey page assessed.......");
+        homeService.saveVisitLog(request,device,"survey");
+        return "interest_survey";
+    }
 }
