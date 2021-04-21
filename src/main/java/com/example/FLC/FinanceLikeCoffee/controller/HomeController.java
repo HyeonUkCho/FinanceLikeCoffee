@@ -8,6 +8,7 @@ import org.springframework.mobile.device.Device;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -25,8 +26,15 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model, HttpServletRequest request, Device device) {
-        logger.info("home page assessed.......");
+        logger.info("home page assessed.....");
         homeService.saveVisitLog(request,device,"home");
+        return "home";
+    }
+
+    @GetMapping("/ticklemickle")
+    public String homeByLink(@RequestParam("link") String fromLink, Model model, HttpServletRequest request, Device device) {
+        logger.info("home page assessed.....fromLink : " + fromLink);
+        homeService.saveVisitLog(request,device,"home-" + fromLink);
         return "home";
     }
 
