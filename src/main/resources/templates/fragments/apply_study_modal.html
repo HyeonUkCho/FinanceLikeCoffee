@@ -1,0 +1,94 @@
+<html lagn="ko"
+      xmlns:th="http://www.thymeleaf.org">
+
+<!-- The Modal -->
+<div class="modal" id="myModal" th:fragment="modalFragment">
+    <div class="modal-dialog full_box_modal">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <span class="modal-title">함께하는 금융수다</span>
+                <button type="button" class="close" style="font-size: 3rem;" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <hr id="modal_hr_inline2">
+                <div class="modal_card_common card_stock" id="card1" onclick="window.open('https://forms.gle/9a1nVmcBhe8DruUr9');">
+                    <div class="card_head">
+                        <img class="index_link" style="width:5rem;" src="/images/ico_chart_main.svg">
+                        <div class="modal_card_title_head">주식</div>
+                    </div>
+
+                    <div class="modal_card_title">
+                        <div>매일 보는 주식 차트,</div>
+                        <div>과연 나는 맞게 하고 있을까?</div>
+                    </div>
+
+                    <div class="modal_button_div">
+                        <button id="modal_button_common">신청하기</button>
+                    </div>
+                </div>
+
+                <hr id="modal_hr_inline">
+
+                <div class="modal_card_common card_housing" id="card2" onclick="window.open('https://forms.gle/Lgeh2e4q9fcMWvJ67');">
+                    <div class="card_head">
+                        <img class="index_link" style="width:5rem;" src="/images/ico_realestate_main.svg">
+                        <div class="modal_card_title_head">부동산</div>
+                    </div>
+
+
+
+                    <div class="modal_card_title">
+                        <div>부동산, 가장 늦었다고</div>
+                        <div>생각할 때가 정말 늦었다!</div>
+                    </div>
+
+                    <div class="modal_button_div">
+                        <button id="modal_button_common">
+                            신청하기
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <hr id="modal_hr_inline">
+
+                <div class="modal_card_common card_finance" id="card3" onclick="window.open('https://forms.gle/qghyQFyuSrzHdh897');">
+                    <div class="card_head">
+                        <img class="index_link" style="width:5rem;" src="/images/ico_financial_main.svg">
+                        <div class="modal_card_title_head">금융상품</div>
+                    </div>
+
+                    <div class="modal_card_title">
+                        <div>금융상품의 개념부터</div>
+                        <div>전문 분야까지 차근차근!</div>
+                    </div>
+
+
+                    <div class="modal_button_div">
+                        <button id="modal_button_common">
+                            신청하기
+                        </button>
+                    </div>
+
+                </div>
+
+                <hr id="modal_hr_inline3">
+
+            </div>
+
+            <!-- Modal footer
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            -->
+
+        </div>
+    </div>
+</div>
+
+</html>

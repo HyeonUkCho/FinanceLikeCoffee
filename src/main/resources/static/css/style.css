@@ -94,8 +94,8 @@ html, body {
 }
 #pagesection2, #pagesection3{
 	padding: 40px;
-	padding-top: 12rem;
-	padding-bottom: 12rem;
+	padding-top: 15rem;
+    padding-bottom: 15rem;
 }
 #pagesection1, #pagesection2, #pagesection4 {
 	background-color: #f9f9f9;
@@ -105,8 +105,11 @@ html, body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 950px;
-	/*min-height: 100vh;*/
+	display: flex;
+
+    	/*
+    	height: 950px;
+    	min-height: 100vh;*/
 	
 }
 #pagesection4 {
@@ -280,6 +283,13 @@ html, body {
 	padding: 20px 30px 20px 30px;
 	margin: 0 auto;
 	/*border: 0.5px solid lightgrey;*/
+	background-color: white;
+}
+
+.modal_card_common{
+	max-width: 400px;
+	padding: 1rem;
+	margin: 0 auto;
 	background-color: white;
 }
 
@@ -888,7 +898,7 @@ html, body {
 		text-align: center;
 		color: #7900ab;
 			
-		margin-top: 100px;
+		margin-top: 40px;
 	}
 	
 	#introduce_cetner_text_content{
@@ -965,6 +975,11 @@ html, body {
   	/*line-height: 1.7;*/
   	letter-spacing: normal;
   	color: #333333;
+}
+
+.faq_card_answer_link_image {
+	margin-top: 10px;
+	text-align: center;
 }
 
 .faq_head_navpills{
@@ -1341,6 +1356,114 @@ a:hover {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+
+
+/**************/
+/***  MODAL ***/
+/**************/
+
+.modal-dialog {
+	width: 500px !important;
+}
+#myModal {
+	/*	text-align: center;  */
+	margin: 0 auto;
+}
+.modal-body {
+	text-align: center;
+	padding: 0.5rem 2rem 2rem 2rem !important;
+}
+.modal-title {
+  font-family: NanumSquareR;
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 6.5;
+  letter-spacing: normal;
+  color: #333333;
+}
+.modal-header{
+	border-bottom: 0px !important;
+	padding: 1.5rem 2.5rem 0rem 2.5rem !important;
+}
+
+.full_box_modal {
+	max-width: 80%;
+	/*	padding: 0 7rem 0 7rem; */
+	margin: 50px auto !important;
+}
+.modal_card_title_head {
+	font-family: NanumSquareEB;
+    font-size: 2.7rem;
+  	font-weight: normal;
+  	font-stretch: normal;
+  	font-style: normal;
+  	line-height: 1.7;
+  	letter-spacing: normal;
+  	text-align: center;
+  	color: #333333;
+}
+.modal_card_title {
+  font-family: NanumSquareR;
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #666666;
+}
+.modal_button_div {
+	max-width: 30rem;
+    margin: 0 auto;
+}
+#modal_button_common{
+
+	font-family: NanumSquareB;
+	font-size: 1.3rem;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: 0.6px;
+	line-height: 2;
+	text-align: center;
+
+	width: 70%;
+
+	background-color: #7900ab;
+    color: #ffffff;
+
+	border: 0.1rem solid #7900ab;
+    border-radius: 23px;
+	margin: 1.5rem auto 0rem auto;
+	padding: 0px;
+
+}
+#modal_button_common:hover {
+   color: #666666;
+   background-color: #f9f9f9;
+}
+
+#modal_hr_inline, #modal_hr_inline2, #modal_hr_inline3 {
+	background-color: #7900ab;
+	border: 0rem solid #7900ab;
+	height: 0.1px;
+}
+#modal_hr_inline {
+	margin-top: 13px !important;
+	margin-bottom: 1px !important;
+}
+#modal_hr_inline2 {
+	margin-top: 0px !important;
+	margin-bottom: 1px !important;
+}
+#modal_hr_inline3 {
+	margin-top: 13px !important;
+	margin-bottom: 13px !important;
 }
 
 
