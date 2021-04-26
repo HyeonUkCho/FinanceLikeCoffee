@@ -2,35 +2,38 @@
 <!-- 60초마다 설정 파일의 변경을 확인 하여 변경시 갱신 -->
 <configuration scan="true" scanPeriod="60 seconds">
     <!--springProfile 태그를 사용하면 logback 설정파일에서 복수개의 프로파일을 설정할 수 있다.-->
-    <springProfile name="dev">
-        <property resource="logback-dev.properties"/>
-    </springProfile>
 
-    <springProfile name="prod">
-        <property resource="logback-prod.properties"/>
-    </springProfile>
+<!--    <springProfile name="local">-->
+<!--        <property resource="logback-local.properties"/>-->
+<!--    </springProfile>-->
+
+<!--    <springProfile name="prod">-->
+<!--        <property resource="logback-prod.properties"/>-->
+<!--    </springProfile>-->
 
     <!--Environment 내의 프로퍼티들을 개별적으로 설정할 수도 있다.-->
-    <springProperty scope="context" name="LOG_LEVEL" source="logging.level.root"/>
+    <!--<springProperty scope="context" name="LOG_LEVEL" source="logging.level.root"/>-->
 
     <!-- log file path -->
-    <property name="LOG_PATH" value="${log.config.path}"/>
+    <property name="LOG_PATH" value="/home/ec2-user/apps/logs"/>
 
     <!-- log file name -->
-    <property name="LOG_FILE_NAME" value="${log.config.filename}"/>
+    <property name="LOG_FILE_NAME" value="tm_log"/>
 
     <!-- err log file name -->
-    <property name="ERR_LOG_FILE_NAME" value="err_log"/>
+    <property name="ERR_LOG_FILE_NAME" value="tm_err_log"/>
 
     <!-- pattern -->
     <property name="LOG_PATTERN" value="%-5level %d{yy-MM-dd HH:mm:ss}[%thread] [%logger{0}:%line] - %msg%n"/>
 
-    <!-- Console Appender -->
+
+        <!-- Console Appender -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>${LOG_PATTERN}</pattern>
         </encoder>
     </appender>
+
 
     <!-- File Appender -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
@@ -55,9 +58,9 @@
     </appender>
 
     <!-- 에러의 경우 파일에 로그 처리 -->
-    <appender name="Error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender name="ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
-            <level>error</level>
+            <level>ERROR</level>
             <onMatch>ACCEPT</onMatch>
             <onMismatch>DENY</onMismatch>
         </filter>
@@ -65,7 +68,6 @@
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>${LOG_PATTERN}</pattern>
         </encoder>
-
         <!-- Rolling 정책 -->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- .gz,.zip 등을 넣으면 자동 일자별 로그파일 압축 -->
@@ -80,20 +82,19 @@
     </appender>
 
     <!-- root레벨 설정 -->
-    <root level="${LOG_LEVEL}">
+    <root level="INFO">
         <appender-ref ref="FILE"/>
-        <appender-ref ref="Error"/>
+        <appender-ref ref="ERROR"/>
     </root>
-
-    <logger name="org.thymeleaf" level="INFO">
+    <logger name="org.thymeleaf" level="ERROR" additivity="false">
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="Error"/>
+    </logger>
+    <logger name="org.springframework" level="ERROR" additivity="false">
         <appender-ref ref="FILE"/>
         <appender-ref ref="Error"/>
     </logger>
 
-    <logger name="org.springframework" level="INFO">
-        <appender-ref ref="FILE"/>
-        <appender-ref ref="Error"/>
-    </logger>
     <!-- 특정패키지 로깅레벨 설정 -->
     <!--
     <logger name="org.apache.ibatis" level="DEBUG" additivity="false">
