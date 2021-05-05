@@ -2,10 +2,7 @@
 <html>
 	<head>
 		
-		<script type="text/javascript" src="https://developers.kakao.com/sdk/js/kakao.js"> </script>
-		
-		<script type="text/javascript" src="kakao_open_api.js"> </script>
-		
+		<script type="text/JavaScript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 		
 	</head>
 	
@@ -59,14 +56,14 @@
 항상 남들의 말에 조금 더 귀기울이고 수익이 날 수록 겸손해지며 항상 시장앞에 배우는 자세로 투자해보는 것은 어떨까요? <br>
 			</div>
 		</div>
-		<!--
+		
 		<div style="text-align:center;">
 			<button class="ISR_kakao_button" id="ISR_kakao_linkbtn" 
 								onclick="sendLinkCustom()">
 				카카오톡으로 공유하기
 			</button>	
 		</div>
-		-->
+		
 		<div style="text-align:center;">
 			<button class="ISR_retest_button" 
 								onclick="location.href='/interest_survey';">
@@ -81,4 +78,16 @@
 		</div>
 
 	</body>
+	
+	<script  type="text/javascript">
+				
+			function sendLinkCustom() {
+
+				Kakao.init('9175496125b7a261017afec5592049dd');  
+				Kakao.Link.sendCustom({
+					templateId: 53045 
+				});
+			}
+
+	</script>
 </html>
