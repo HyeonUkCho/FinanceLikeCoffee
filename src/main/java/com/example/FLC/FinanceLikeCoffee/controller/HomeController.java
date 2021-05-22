@@ -69,6 +69,6 @@ public class HomeController {
     public String realestate_detail(Model model, HttpServletRequest request, Device device) {
         logger.info("realestate_detail page assessed.......");
         homeService.saveVisitLog(request,device,"realestate_detail");
-        return "/studydetail/realestate_detail";
+        return "studydetail/realestate_detail";
     }
 }
