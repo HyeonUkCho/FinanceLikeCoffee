@@ -1,0 +1,419 @@
+
+
+
+
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/********PC VERSION**********/
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+
+
+
+
+@media screen and (min-width: 750px) {
+
+	#main_card_index {
+		margin-top: 10px;
+	}
+	
+	.first_topic {
+		padding: 40px 0px 15px 10px;
+		margin: 50px 0 0;
+		font-size: 75px;
+		color: #7900ab;
+		font-family: NanumSquareEB;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.3;
+		letter-spacing: normal;
+		text-align: left;
+
+		display: block;
+	}
+	.first_content {
+
+		height: 80px;
+		margin: 0 0 60px 0;
+		padding: 0px 0px 0px 10px;
+
+		display: block;
+
+		font-family: NanumSquareR;
+		font-size: 1.7rem;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: left;
+		color: #666666;
+	}
+	
+	#faq_pagesection1 {
+		padding-bottom: 4rem;
+	}
+	#myhead_nav {
+		padding: 60px 0 0 0;
+	}
+	#nav_head {
+		vertical-align: middle; 
+		margin-left: 10px;
+		font-family: NanumSquareR;
+		font-size: 1.1em;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+
+		letter-spacing: normal;
+		text-align: left;
+		color: #707070;
+	}
+	.navhead_content{
+	  vertical-align: middle;	
+		/*padding: 1.2rem;*/
+	  color: #707070;
+	  text-decoration:none !important;
+	  font-family: NanumSquareB;
+	  font-size: 1.1em;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	}
+
+	.faq_head_title {	
+		font-family: NanumSquareEB;
+		font-size: 1.6rem;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		
+		letter-spacing: normal;
+		text-align: left;
+		color: #333333;	
+		
+		padding: 0.5rem 0;
+
+	}
+	.faq_head_content {
+
+		font-family: NanumSquareR;
+		font-size: 1.6rem;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		
+		letter-spacing: normal;
+		text-align: left;
+		color: #333333;	
+		padding: 0.5rem 0;
+	}	
+	#faq_head_info {
+		border: 1px solid #7900ab;
+		max-width: 57rem;
+		
+		margin: 0px auto 40px auto;
+		padding: 0 1rem;
+	}
+	
+	.faq_head_navpills {
+		max-width: 85rem;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	.faq_content_navpills{
+		max-width: 60rem;
+		margin: 40px auto;
+		text-align: center;
+	}
+	.my_li {
+		display: inline-block !important;
+		float: none !important;
+		padding: 0 3px 0 3px;
+	}
+	.nav-link {
+	
+		/*min-width: 140px;			*/
+		padding: 3px 10px !important;
+		
+		font-family: NanumSquareB;
+		font-size: 1.6rem;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.89;
+		letter-spacing: normal;
+		text-align: center;
+		color: #333333;
+		background-color: #f9f9f9;
+		
+	}
+	#img_examine_qna {
+		width: 55%;
+	}
+	#img_story_qna{
+		width: 85%;
+	}
+	#hr_middleline {
+		max-width: 9rem;
+		margin: 40px auto;
+		height: 2px;
+		background-color: #7900ab;
+	}
+	#mobile_main_character, .hr_head_mobile {
+		display: none;
+	}
+	
+	/*********************/
+	/******INTRODUCE******/
+	/*********************/
+
+	.side_align_container_introduce {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1360px;
+	}
+	#introduce_main_character_mobile, #img_bottom_introduce_mobile {
+		display: none;
+	}
+	#introduce_cetner_text_main{
+		text-align: center;
+		font-family: NanumSquareEB;
+		font-size: 4rem;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: center;
+		color: #7900ab;
+			
+		margin-top: 40px;
+	}
+	
+	#introduce_cetner_text_content{
+	  
+		font-family: NanumSquareEB;
+	  	font-size: 2.5rem;
+	  	font-weight: normal;
+	  	font-stretch: normal;
+	  	font-style: normal;
+	  	line-height: 1.5;
+	  	letter-spacing: normal;
+	  	text-align: center;
+	  	color: #333333;	
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	#introduce_cetner_text_subcontent{
+		 
+		  font-family: SourceHanSansKR;
+		  font-size: 1.4rem;
+		  font-weight: normal;
+		  font-stretch: normal;
+		  font-style: normal;
+		  line-height: 1.45;
+		  letter-spacing: normal;
+		  text-align: left;
+		  color: #707070;
+			  
+	      padding: 0px 15px;
+		  margin: 90px auto;
+		max-width: 1360px;
+		  
+	}	
+	#hr_centerline{
+		width: 0.1px;
+		height: 228px;
+				/*border: 1px solid #7900ab;*/
+		border-left: 2px solid #7900ab;
+		text-align: center;
+		margin-top: 66px;
+		margin-bottom: 66px;
+	}
+	
+	
+	/**********************/
+	/** realestate_detail **/
+	/**********************/
+
+	.side_align_container_detail{
+		margin:45px auto; width:100%; max-width: 1360px;
+	}
+	
+	.realestate_detail_first_section {
+		background-image: url('../images//img_realestate_bg_detail.jpg');
+		background-size: cover;
+		height:1600px;
+	}
+
+	#realestate_detail_first_main_text {
+
+		margin-top: 100px; 
+
+	  font-family: NanumSquareEB;
+	  font-size: 7rem;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 1.27;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #fefefe;
+	}
+	#realestate_detail_first_sub_text{
+		margin-top: 15px;
+
+	  font-family: NanumSquareR;
+	  font-size: 1.8rem;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 1.43;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #cccccc;
+	}
+	#realestate_detail_first_price {
+
+		margin: 200px 0 160px 0;
+
+	  font-family: NanumSquareEB;
+	  font-size: 2.5rem;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 1.44;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #ffffff;
+	}
+	#realestate_detail_first_center_main_text{
+
+	  font-family: NanumSquareEB;
+	  font-size: 4.5rem;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 1.55;
+	  letter-spacing: normal;
+	  text-align: center;
+	  color: #f0f0f0;
+	}
+	#realestate_detail_first_center_sub_text{
+
+	  font-family: NanumSquareEB;
+	  font-size: 2.4rem;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 1.48;
+	  letter-spacing: normal;
+	  text-align: center;
+	  color: #cccccc;
+
+	}
+
+	#realestate_detail_first_center_sub2_text{
+		margin: 20px 0 150px 0;
+	}
+
+	.realestate_detail_little_text{
+
+	  font-family: NanumSquareR;
+	  font-size: 1.5rem;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 1.45;
+	  letter-spacing: normal;
+	  text-align: center;
+	  color: #cccccc;
+	}
+	
+	#realestate_detail_second_title, #realestate_detail_third_title{
+  		font-size: 3.7rem;
+	}
+	#realestate_detail_second_content{			height: 400px;
+		font-size: 1.6rem;
+	}
+	.detail_middle_content{
+		vertical-align: middle;
+		height:400px;
+		display: table-cell;
+	}
+	#realestate_detail_middle_box{
+		padding: 30px 6rem;
+		border: 1px solid #7900ab;
+		width: 60%;
+		margin: 0 auto;
+		display: flex;
+	}
+	#realestate_detail_middle_title{
+	  	font-size: 2rem;
+		margin: auto 0;
+		text-align: left;
+	}
+	#realestate_detail_middle_content{
+	  	font-size: 1.5rem;
+
+	}
+	.middle_content_common{
+		padding: 0px;
+		margin: 0px 0px 10px 0px;
+		height: 30px;
+	}
+	.realestate_detail_third_content{
+		font-size: 2rem;
+	}
+	.realestate_detail_third_sub_content{
+		font-size: 1.3rem;
+	}
+	#img_study_detail{
+		font-size: 2.7rem;
+	}
+	
+	#realestate_detail_gray_zone{
+	  padding: 57px 200.8px;
+	}
+	#pagesection5{
+		padding: 15rem;
+	}
+	
+	.realestate_detail_last_common_box {   
+		margin: 20px 0px;
+		text-align: center;
+		padding: 4rem 3rem;
+		background-color: #ffffff;
+		min-height: 300px;
+	}
+	#realestate_detail_apply{
+		font-size: 3rem;
+		padding: 20rem 50rem;
+	}
+	#realestate_detail_last_sub_text{
+	  font-size: 1.4rem;
+	  padding: 0rem 2rem;
+	}
+
+	.remove_padding_pc{
+		padding: 0px !important;
+		height: 100%;
+	}
+
+}
+
+
+
+
+
+
+
