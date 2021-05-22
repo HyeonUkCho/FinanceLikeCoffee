@@ -1,0 +1,436 @@
+
+
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/********MOBILE VERSION**********/
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+
+
+@media screen and (max-width: 750px) {
+
+	#main_card_index {
+		margin-top: 10px;
+	}
+	.card_test_box{
+		padding: 0px;
+	}
+	.first_topic {
+		padding: 40px 0px 15px 10px;
+	
+		font-size: 75px;
+		color: #7900ab;
+		font-family: NanumSquareEB;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.3;
+		letter-spacing: normal;
+		text-align: left;
+
+		display: block;
+	}
+	
+	.first_content {
+
+		height: 80px;
+		margin: 0 0 30px 0;
+		padding: 0px 0px 0px 10px;
+
+		display: block;
+
+		font-family: NanumSquareR;
+		font-size: 1.7rem;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: left;
+		color: #666666;
+	}
+	
+	.page4_card_common {
+		margin-bottom: 20px;
+	}	
+	#faq_pagesection1 {
+		padding-bottom: 4rem;
+	}
+	#myhead_nav{
+		padding: 15px 0 0 0;
+	}
+	#nav_head {
+		vertical-align: middle; 
+		margin-left: 10px;
+		font-family: NanumSquareR;
+		font-size: 0.9em;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+
+		letter-spacing: normal;
+		text-align: left;
+		color: #707070;
+	}
+	
+	.navhead_content{
+	  vertical-align: middle;	
+		/*padding: 1.2rem;*/
+	  color: #707070;
+	  text-decoration:none !important;
+	  font-family: NanumSquareB;
+	  font-size: 0.9em;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	}
+
+	.faq_head_title {	
+		font-family: NanumSquareEB;
+		font-size: 1.1rem;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		
+		letter-spacing: normal;
+		text-align: left;
+		color: #333333;	
+		
+		padding: 0.3rem 0 0 0rem ;
+
+	}
+	.faq_head_content {
+
+		font-family: NanumSquareR;
+		font-size: 1.1rem;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		
+		letter-spacing: normal;
+		text-align: left;
+		color: #333333;	
+		
+		padding: 0.3rem 0 0 0rem ;
+	}
+	
+	#faq_head_info {
+		border: 1px solid #7900ab;
+		max-width: 35rem;
+		
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+	
+	.faq_head_navpills {
+		max-width: 80rem;
+		margin: 4rem auto;
+		text-align: center;
+	}
+	.faq_content_navpills{
+		max-width: 35rem;
+		margin: 40px auto;
+		text-align: center;
+	}
+	.my_li {
+  		display: inline-block !important;
+		float: none !important;
+		padding: 0 3px 0 3px;
+		margin: 10px 0px 0px 0px;
+	}	
+	.nav-link {
+
+		min-width: 80px;
+		padding: 3px 0px !important;
+
+		font-family: NanumSquareB;
+		font-size: 1.2rem;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.89;
+		letter-spacing: normal;
+		text-align: center;
+		color: #333333;
+		background-color: #f9f9f9;
+	}
+	#img_examine_qna {
+		width: 80%;
+	}
+	
+	#img_story_qna{
+		width: 85%;
+	}
+	
+	#faq_head_image{ 
+		width: 100%;
+    	margin: 4px 0 4px 0;
+	}
+	.faq_head_email, .faq_head_kakao{
+		margin: 10px 0 10px 0;
+	}
+	#hr_middleline {
+		max-width: 7rem;
+		margin: 40px auto;
+		height: 2px;
+		background-color: #7900ab;
+		border-top: 0px;
+	}
+	#pc_main_character, .hr_head_pc {
+		display: none;
+	}
+	
+	/*********************/
+	/******INTRODUCE******/
+	/*********************/
+	
+	#introduce_main_character_pc, #img_bottom_introduce_pc, #jump_br {
+		display: none;
+	}
+	
+	#introduce_cetner_text_main{
+		
+		text-align: center;
+		font-family: NanumSquareEB;
+		font-size: 3rem;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: center;
+		color: #7900ab;
+		
+		/*padding: 0px 5rem 0px 5rem;*/
+		margin-top: 50px;
+	}
+	#introduce_cetner_text_content{
+	  
+		font-family: NanumSquareEB;
+	  	font-size: 1.9rem;
+	  	font-weight: normal;
+	  	font-stretch: normal;
+	  	font-style: normal;
+	  	line-height: 1.5;
+	  	letter-spacing: normal;
+	  	text-align: center;
+	  	color: #333333;	
+		padding: 4rem;
+	}
+	#introduce_cetner_text_subcontent{
+		 
+		  font-family: SourceHanSansKR;
+		  font-size: 1.5rem;
+		  font-weight: normal;
+		  font-stretch: normal;
+		  font-style: normal;
+		  line-height: 1.45;
+		  letter-spacing: normal;
+		  text-align: left;
+		  color: #707070;
+		
+		  margin-top: 30px;
+		  margin-bottom: 30px;
+	}	
+	#hr_centerline{
+		width: 0.1px;
+		height: 100px;
+		/*border: 1px solid #7900ab;*/
+		border-left: 2px solid #7900ab;
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	
+	
+	
+	
+	/**********************/
+	/** realestate_detail **/
+	/**********************/
+
+	.side_align_container_detail{
+		margin:45px auto; width:100%; max-width: 400px;
+	}
+	.realestate_detail_first_section {
+		background-image: url('../images//img_realestate_bg_detail.jpg'); 
+		background-size: cover;
+		height:1450px;
+	}
+
+	#realestate_detail_first_main_text {
+
+		margin-top: 80px; 
+
+	  font-family: NanumSquareEB;
+	  font-size: 5.5rem;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 1.27;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #fefefe;
+	}
+	#realestate_detail_first_sub_text{
+		margin-top: 15px;
+
+	  font-family: NanumSquareR;
+	  font-size: 1.5rem;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 1.43;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #cccccc;
+	}
+	#realestate_detail_first_price {
+
+		margin: 150px 0 120px 0;
+		padding: 0px 15px;
+		
+	  font-family: NanumSquareEB;
+	  font-size: 2.2rem;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 1.44;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #ffffff;
+	}
+	#realestate_detail_first_center_main_text{
+	  
+	  padding: 0px 4.7rem;
+	  font-family: NanumSquareEB;
+	  font-size: 2.6rem;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 1.55;
+	  letter-spacing: normal;
+	  text-align: center;
+	  color: #f0f0f0;
+	}
+	#realestate_detail_first_center_sub_text{
+		
+	  padding: 0px 15px;
+
+	  font-family: NanumSquareEB;
+	  font-size: 1.5rem;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 1.48;
+	  letter-spacing: normal;
+	  text-align: center;
+	  color: #cccccc;
+
+	}
+
+	#realestate_detail_first_center_sub2_text{
+		margin: 20px 0 150px 0;
+	}
+
+	.realestate_detail_little_text{
+
+	  margin: 10px 0px;
+	  font-family: NanumSquareR;
+	  font-size: 1.1rem;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	  line-height: 1.45;
+	  letter-spacing: normal;
+	  text-align: center;
+	  color: #cccccc;
+	}
+	
+	#realestate_detail_second_title, #realestate_detail_third_title{
+  		font-size: 3.2rem;
+	}
+	#realestate_detail_second_content{		
+		height: 300px;
+		font-size: 1.4rem;
+	}
+	.detail_middle_content{
+		vertical-align: middle;
+		height: 300px;
+		display: table-cell;
+	}
+	#realestate_detail_middle_box{
+		
+		padding: 30px 2rem;
+		border: 1px solid #7900ab;
+		max-width: 1000px;
+		margin: 0 auto;
+		display: inline-block;
+	}
+	#realestate_detail_middle_title{
+	  	font-size: 2rem;
+		margin: auto 0;
+		text-align: center;
+	}
+	#realestate_detail_middle_content{
+	  	font-size: 1.3rem;
+
+	}
+	.middle_content_common{
+		padding: 0px;
+		margin: 0px 0px 10px 0px;
+	}
+	.realestate_detail_third_content{
+		font-size: 2rem;
+	}
+	.realestate_detail_third_sub_content{
+		font-size: 1.3rem;
+	}
+	#img_study_detail{
+		margin-bottom: 50px;
+		font-size: 2.2rem;
+	}
+	#realestate_detail_gray_zone{
+  		font-size: 1.4rem;
+	}
+	#pagesection5{
+		padding: 5rem 5rem;
+	}
+	#realestate_detail_gray_zone{
+		padding: 5rem 3.5rem;
+	}
+	.realestate_detail_last_common_box {   
+		margin: 20px 0px;
+		text-align: center;
+		padding: 2rem 1.5rem;
+		background-color: #ffffff;
+		min-height: 200px;
+	}
+	#realestate_detail_apply{
+		font-size: 1.8rem;
+		padding: 15rem 3rem;
+	}
+	#realestate_detail_last_sub_text{
+	  font-size: 1.2rem;
+	  padding: 0rem 1rem;
+	}
+	.remove_padding_mb{
+		padding: 0px 0px 0px 10px !important;
+		height: 100%;
+	}
+}
+
+
+
+
+
+
+

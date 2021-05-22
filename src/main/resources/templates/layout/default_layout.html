@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lagn="ko"
+<html lang="ko"
       xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
@@ -24,12 +24,11 @@
         -->
         <th:block layout:fragment="content"></th:block>
 
-        <!-- custom javascript -->
+        <!-- custom java script -->
         <th:block layout:fragment="script"></th:block>
 
-        <!-- footer fragment 사용 -->
-        <th:block th:replace="fragments/apply_study_modal :: modalFragment"> </th:block>
-
+        <!-- footer fragment 사용--> 
+        <th:block th:replace="fragments/apply_study_modal :: modalFragment"> </th:block>        		
         <!-- footer fragment 사용 -->
         <th:block th:replace="fragments/footer :: footerFragment"> </th:block>
     </body>

@@ -4,10 +4,9 @@
       layout:decorator="layout/default_layout">
 
 <div layout:fragment="content">
-
+	
     <!-- first section -->
     <section class="page-section" id="pagesection1">
-
         <!-- first main  -->
         <div class="firsthead" id="first_head">
 
@@ -29,7 +28,7 @@
                             <img id="pc_main_character" style="height:100%; float:right;" src="/images/img_main_character.png">
 
 
-                            <img id="mobile_main_character" style="height:100%; float:right;" src="/images/img_main_character_mobile.png">
+                            <img id="mobile_main_character" style="height:85%; float:right;" src="/images/img_main_character_mobile.png">
 
                         </div>
                     </div>
@@ -266,12 +265,12 @@
             </div>
 
 
-            <div class="side_align_container_third" style="margin-top:70px";>
+            <div class="side_align_container_third" style="margin-top:70px">
 
 
                 <!-- card 1 -->
                 <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div id="card_test" onclick="alert('준비중입니다.')";>
+                    <div id="card_test" onclick="alert('준비중입니다.')">
                         <span id="span_head" >STAUTS</span>
                         <hr id="hr_inline">
 
@@ -292,7 +291,7 @@
 
                 <!-- card 2 -->
                 <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div id="card_test" onclick="alert('준비중입니다.')";>
+                    <div id="card_test" onclick="alert('준비중입니다.')">
 
                         <span id="span_head" >KNOWLEDGE</span>
                         <hr id="hr_inline">
@@ -362,7 +361,7 @@
                 </div>
 
                 <!-- card 3-->
-                <div class="col-lg-3 col-sm-6 page4_content_card page4_card_common">
+                <div class="col-lg-3 col-sm-6 page4_content_card page4_card_common" onclick="location.href='/realestate_detail';">
 
                     <img src="/images/study_housing.png" id="page4_card_image">
                     <hr id="hr_inline">
@@ -374,7 +373,7 @@
 								부동산 매수할 수 있는 방법은
 								무엇이 있을까요? 씨드 없이도
 								부동산 투자하기
-							</span>
+					</span>
                 </div>
             </div>
             <div class="row">
@@ -431,13 +430,16 @@
 								기업의 재무제표를 기술적 분석
 								방법으로 분석하여 기업의 가치 평가와
 								주가 예측에 대한 공부를 함께 해요
-							</span>
+					</span>
 
                 </div>
             </div>
         </div>
     </section>
 </div>
+
+
+
 <th:block layout:fragment="script">
     <script th:inline="javascript">
         function alertWeAreReady() {

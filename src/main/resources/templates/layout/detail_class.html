@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+    <head>
+        <!-- 네이버 검색 Meta -->
+        <meta name="naver-site-verification" content="4a467c65789093ade268ece2045f4358d2dde07e" />
+        <!-- 구글 검색 Meta -->
+        <meta name="google-site-verification" content="w2g0j8mI5mNTSLteZ8jhmsnW2QtEim8Q_tD6soEch88" />
+
+        <!-- config fragment 사용 -->
+        <th:block th:replace="config/config :: configFragment" ></th:block>
+    </head>
+
+    <body class="page-section">
+        <!--
+            content fragment 사용
+            현재 layout을 사용하는 content fragment의 내용을 삽입한다.
+        -->
+        <th:block layout:fragment="content"></th:block>
+
+        <!-- custom java script -->
+        <th:block layout:fragment="script"></th:block>
+
+        <!-- footer fragment 사용--> 
+        <th:block th:replace="fragments/apply_study_modal :: modalFragment"> </th:block>        		
+        <!-- footer fragment 사용 -->
+        <th:block th:replace="fragments/footer :: footerFragment"> </th:block>
+    </body>
+
+</html>

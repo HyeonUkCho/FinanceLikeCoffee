@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <g>
+        <g fill="none" stroke="#7900ab" transform="translate(-184 -4905) translate(184 4905)">
+            <circle cx="15" cy="15" r="15" stroke="none"/>
+            <circle cx="15" cy="15" r="14.5"/>
+        </g>
+        <text fill="#7900ab" font-family="NanumSquareR, NanumSquare" font-size="21px" transform="translate(-184 -4905) translate(189 4908.5)">
+            <tspan x="-6.3" y="18">1</tspan>
+        </text>
+    </g>
+</svg>
