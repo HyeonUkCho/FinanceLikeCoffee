@@ -65,4 +65,10 @@ public class HomeController {
         homeService.saveVisitLog(request,device,"survey");
         return "interest_survey";
     }
+    @GetMapping("/realestate_detail")
+    public String realestate_detail(Model model, HttpServletRequest request, Device device) {
+        logger.info("realestate_detail page assessed.......");
+        homeService.saveVisitLog(request,device,"realestate_detail");
+        return "/studydetail/realestate_detail";
+    }
 }
