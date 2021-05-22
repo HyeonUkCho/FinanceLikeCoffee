@@ -2,7 +2,7 @@ html, body {
     font-family: NanumSquareR;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
-    background-color: #f9f9f9;
+	
 }
 
 .row {
@@ -25,24 +25,20 @@ html, body {
     color: #707070;
 	
 }
-
 .page-section {
-    background-color: #f9f9f9;
+	background-color: #f9f9f9;
 }
 
-.nav_wrap {
-    background-color: #f9f9f9;
+@media (min-width: 1200px){
+	.container-xl, .container-lg, .container-md, .container-sm, .container {
+	    max-width: 1140px;
+	}
 }
 
-
-@media (min-width: 1200px)
-.container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
-}
-
-@media (min-width: 992px)
+@media (min-width: 992px) {
 .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
+	}
 }
 
 .ml-auto, .mx-auto {
@@ -64,6 +60,13 @@ html, body {
 .side_align_container_forth {
 	margin:0 auto; width:100%; max-width: 1070px;
 }
+.side_align_container_fifth {
+	margin:45px auto; width:100%; max-width: 550px;
+}
+.side_align_container_detail_first {
+	margin:0 auto; width:100%; max-width: 1100px;
+}
+
 
 .container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
     width: 100%;
@@ -84,40 +87,37 @@ html, body {
 * first main 
 */
 
-
-@media (min-width: 992px)
-.firsthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
-	background-color: ##6610f2 !important;
-}
-
 #pagesection1 {
 	padding-bottom: 6rem;
 }
 #pagesection2{
 	padding: 40px;
 	padding-top: 15rem;
-    padding-bottom: 15rem;
+	padding-bottom: 15rem;
+}
+#pagesection6{
+	padding: 40px;
+	padding-top: 15rem;
 }
 #pagesection3 {
 	padding: 15px;
 	padding-top: 15rem;
 	padding-bottom: 15rem;
 }
-#pagesection1, #pagesection2, #pagesection4 {
+#pagesection1, #pagesection2, #pagesection4, #pagesection5, #pagesection6 {
 	background-color: #f9f9f9;
 }
 #pagesection3 {
+	
 	background-image: url("../images//bg_main.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	display: flex;
-
-    	/*
-    	height: 950px;
-    	min-height: 100vh;*/
+	
+	/*
+	height: 950px;
+	min-height: 100vh;*/
 	
 }
 #pagesection4 {
@@ -138,7 +138,7 @@ html, body {
 
 #main_image{
 	height: 43rem;
-    /*background-image: url(../images//dummy.png);*/
+    /*background-image: url(./img/dummy.png);*/
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -210,6 +210,30 @@ html, body {
 	margin-top: 0px !important;
     margin-bottom: 0px !important;	
 }
+#hr_inline4 {
+	background-color: #7900ab;
+	border: 0.1rem solid #7900ab;
+	margin-top: 23px !important;
+    margin-bottom: 23px !important;
+}
+#hr_inline5 {
+	background-color: #7900ab;
+	border: 0.1rem solid #7900ab;
+	margin-top: 140px !important;
+    margin-bottom: 80px !important;
+}
+#hr_inline6 {
+	background-color: #666666;
+	border: 0.1rem solid #666666;
+	margin-top: 90px !important;
+    margin-bottom: 90px !important;
+}
+#hr_inline7 {
+	background-color: #7900ab;
+	border: 0.1rem solid #7900ab;
+	margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
 
 #hr_outline2 {
 	height: 1px;
@@ -224,7 +248,6 @@ html, body {
 	background-color: #7900ab;
 	border-top: 0px;
 }
-
 #hr_index_card {
 	height: 1.5px;
 	background-color: #7900ab;
@@ -420,6 +443,7 @@ html, body {
 	
 	
 }
+
 .page4_content_card {
 
 	padding-top: 15px;
@@ -455,9 +479,7 @@ html, body {
 .company_margin {
 	margin: 10px 0px 10px 0px;
 }
-.company_id {
-	/*margin-top: 25px */
-}
+
 .company_init {
 	max-width: 600px;
 	color: #c1c1c1;
@@ -526,471 +548,13 @@ html, body {
 
 }
 
-/********MOBILE VERSION**********/
 
-@media screen and (max-width: 750px) {
 
-	#main_card_index {
-		margin-top: 10px;
-	}
-	.card_test_box{
-		padding: 0px;
-	}
-	.first_topic {
-		padding: 40px 0px 15px 10px;
 
-		font-size: 75px;
-		color: #7900ab;
-		font-family: NanumSquareEB;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: 1.3;
-		letter-spacing: normal;
-		text-align: left;
 
-		display: block;
-	}
 
-	.first_content {
 
-		height: 80px;
-		margin: 0 0 30px 0;
-		padding: 0px 0px 0px 10px;
 
-		display: block;
-
-		font-family: NanumSquareR;
-		font-size: 1.7rem;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: 1.5;
-		letter-spacing: normal;
-		text-align: left;
-		color: #666666;
-	}
-
-	.page4_card_common {
-		margin-bottom: 20px;
-	}
-
-	#faq_pagesection1 {
-		padding-bottom: 4rem;
-	}
-	#myhead_nav{
-		padding: 15px 0 0 0;
-	}
-	#nav_head {
-		vertical-align: middle; 
-		margin-left: 10px;
-		font-family: NanumSquareR;
-		font-size: 0.9em;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-
-		letter-spacing: normal;
-		text-align: left;
-		color: #707070;
-	}
-	
-	.navhead_content{
-	  vertical-align: middle;	
-		/*padding: 1.2rem;*/
-	  color: #707070;
-	  text-decoration:none !important;
-	  font-family: NanumSquareB;
-	  font-size: 0.9em;
-	  font-weight: normal;
-	  font-stretch: normal;
-	  font-style: normal;
-	}
-
-	.faq_head_title {	
-		font-family: NanumSquareEB;
-		font-size: 1.1rem;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-		
-		letter-spacing: normal;
-		text-align: left;
-		color: #333333;	
-		
-		padding: 0.3rem 0 0 0rem ;
-
-	}
-	.faq_head_content {
-
-		font-family: NanumSquareR;
-		font-size: 1.1rem;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-		
-		letter-spacing: normal;
-		text-align: left;
-		color: #333333;	
-		
-		padding: 0.3rem 0 0 0rem ;
-	}
-	
-	#faq_head_info {
-		border: 1px solid #7900ab;
-		max-width: 35rem;
-		
-		margin: 0 auto;
-		padding: 0 1rem;
-	}
-	
-	.faq_head_navpills {
-		max-width: 80rem;
-		margin: 4rem auto;
-		text-align: center;
-	}
-	.faq_content_navpills{
-		max-width: 35rem;
-		margin: 40px auto;
-		text-align: center;
-	}
-	.my_li {
-  		display: inline-block !important;
-		float: none !important;
-		padding: 0 3px 0 3px;
-		margin: 10px 0px 0px 0px;
-	}	
-	.nav-link {
-
-		min-width: 80px;
-		padding: 3px 0px !important;
-
-		font-family: NanumSquareB;
-		font-size: 1.2rem;
-		font-weight: bold;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: 1.89;
-		letter-spacing: normal;
-		text-align: center;
-		color: #333333;
-		background-color: #f9f9f9;
-	}
-	#img_examine_qna {
-		width: 80%;
-	}
-	
-	#img_story_qna{
-		width: 85%;
-	}
-	
-	#faq_head_image{ 
-		width: 100%;
-    	margin: 4px 0 4px 0;
-	}
-	.faq_head_email, .faq_head_kakao{
-		margin: 10px 0 10px 0;
-	}
-	#hr_middleline {
-		max-width: 7rem;
-		margin: 40px auto;
-		height: 2px;
-		background-color: #7900ab;
-		border-top: 0px;
-	}
-	#pc_main_character, .hr_head_pc {
-		display: none;
-	}
-	
-	/*********************/
-	/******INTRODUCE******/
-	/*********************/
-	
-	#introduce_main_character_pc, #img_bottom_introduce_pc, #jump_br {
-		display: none;
-	}
-	
-	#introduce_cetner_text_main{
-		
-		text-align: center;
-		font-family: NanumSquareEB;
-		font-size: 3rem;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: 1.5;
-		letter-spacing: normal;
-		text-align: center;
-		color: #7900ab;
-		
-		/*padding: 0px 5rem 0px 5rem;*/
-		margin-top: 50px;
-	}
-	#introduce_cetner_text_content{
-	  
-		font-family: NanumSquareEB;
-	  	font-size: 1.9rem;
-	  	font-weight: normal;
-	  	font-stretch: normal;
-	  	font-style: normal;
-	  	line-height: 1.5;
-	  	letter-spacing: normal;
-	  	text-align: center;
-	  	color: #333333;	
-		padding: 4rem;
-	}
-	#introduce_cetner_text_subcontent{
-		 
-		  font-family: SourceHanSansKR;
-		  font-size: 1.5rem;
-		  font-weight: normal;
-		  font-stretch: normal;
-		  font-style: normal;
-		  line-height: 1.45;
-		  letter-spacing: normal;
-		  text-align: left;
-		  color: #707070;
-		
-		  margin-top: 30px;
-		  margin-bottom: 30px;
-	}	
-	#hr_centerline{
-		width: 0.1px;
-		height: 100px;
-		/*border: 1px solid #7900ab;*/
-		border-left: 2px solid #7900ab;
-		text-align: center;
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-	
-	
-}
-
-/********PC VERSION**********/
-@media screen and (min-width: 750px) {
-
-	#main_card_index {
-		margin-top: 10px;
-	}
-
-	.first_topic {
-		padding: 40px 0px 15px 10px;
-		margin: 50px 0 0;
-		font-size: 75px;
-		color: #7900ab;
-		font-family: NanumSquareEB;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: 1.3;
-		letter-spacing: normal;
-		text-align: left;
-
-		display: block;
-	}
-	.first_content {
-
-		height: 80px;
-		margin: 0 0 60px 0;
-		padding: 0px 0px 0px 10px;
-
-		display: block;
-
-		font-family: NanumSquareR;
-		font-size: 1.7rem;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: 1.5;
-		letter-spacing: normal;
-		text-align: left;
-		color: #666666;
-	}
-
-	#faq_pagesection1 {
-		padding-bottom: 4rem;
-	}
-	#myhead_nav {
-		padding: 60px 0 0 0;
-	}
-	#nav_head {
-		vertical-align: middle; 
-		margin-left: 10px;
-		font-family: NanumSquareR;
-		font-size: 1.1em;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-
-		letter-spacing: normal;
-		text-align: left;
-		color: #707070;
-	}
-	.navhead_content{
-	  vertical-align: middle;	
-		/*padding: 1.2rem;*/
-	  color: #707070;
-	  text-decoration:none !important;
-	  font-family: NanumSquareB;
-	  font-size: 1.1em;
-	  font-weight: normal;
-	  font-stretch: normal;
-	  font-style: normal;
-	}
-
-	.faq_head_title {	
-		font-family: NanumSquareEB;
-		font-size: 1.6rem;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-		
-		letter-spacing: normal;
-		text-align: left;
-		color: #333333;	
-		
-		padding: 0.5rem 0;
-
-	}
-	.faq_head_content {
-
-		font-family: NanumSquareR;
-		font-size: 1.6rem;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-		
-		letter-spacing: normal;
-		text-align: left;
-		color: #333333;	
-		padding: 0.5rem 0;
-	}	
-	#faq_head_info {
-		border: 1px solid #7900ab;
-		max-width: 57rem;
-		
-		margin: 0px auto 40px auto;
-		padding: 0 1rem;
-	}
-	
-	.faq_head_navpills {
-		max-width: 85rem;
-		margin: 0 auto;
-		text-align: center;
-	}
-	
-	.faq_content_navpills{
-		max-width: 60rem;
-		margin: 40px auto;
-		text-align: center;
-	}
-	.my_li {
-		display: inline-block !important;
-		float: none !important;
-		padding: 0 3px 0 3px;
-	}
-	.nav-link {
-	
-		/*min-width: 140px;			*/
-		padding: 3px 10px !important;
-		
-		font-family: NanumSquareB;
-		font-size: 1.6rem;
-		font-weight: bold;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: 1.89;
-		letter-spacing: normal;
-		text-align: center;
-		color: #333333;
-		background-color: #f9f9f9;
-		
-	}
-	#img_examine_qna {
-		width: 55%;
-	}
-	#img_story_qna{
-		width: 85%;
-	}
-	#hr_middleline {
-		max-width: 9rem;
-		margin: 40px auto;
-		height: 2px;
-		background-color: #7900ab;
-	}
-	#mobile_main_character, .hr_head_mobile {
-		display: none;
-	}
-	
-	/*********************/
-	/******INTRODUCE******/
-	/*********************/
-
-	.side_align_container_introduce {
-		margin: 0 auto;
-		width: 100%;
-		max-width: 1360px;
-	}
-	#introduce_main_character_mobile, #img_bottom_introduce_mobile {
-		display: none;
-	}
-	#introduce_cetner_text_main{
-		text-align: center;
-		font-family: NanumSquareEB;
-		font-size: 4rem;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: 1.5;
-		letter-spacing: normal;
-		text-align: center;
-		color: #7900ab;
-			
-		margin-top: 40px;
-	}
-	
-	#introduce_cetner_text_content{
-	  
-		font-family: NanumSquareEB;
-	  	font-size: 2.5rem;
-	  	font-weight: normal;
-	  	font-stretch: normal;
-	  	font-style: normal;
-	  	line-height: 1.5;
-	  	letter-spacing: normal;
-	  	text-align: center;
-	  	color: #333333;	
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-	#introduce_cetner_text_subcontent{
-		 
-		  font-family: SourceHanSansKR;
-		  font-size: 1.4rem;
-		  font-weight: normal;
-		  font-stretch: normal;
-		  font-style: normal;
-		  line-height: 1.45;
-		  letter-spacing: normal;
-		  text-align: left;
-		  color: #707070;
-			  
-	      padding: 0px 15px;
-          margin: 90px auto;
-          max-width: 1360px;
-	}	
-	#hr_centerline{
-		width: 0.1px;
-		height: 228px;
-				/*border: 1px solid #7900ab;*/
-		border-left: 2px solid #7900ab;
-		text-align: center;
-		margin-top: 66px;
-		margin-bottom: 66px;
-	}
-	
-}
 
 .faq_card_full_common {
 	
@@ -1025,7 +589,6 @@ html, body {
   	letter-spacing: normal;
   	color: #333333;
 }
-
 .faq_card_answer_link_image {
 	margin-top: 10px;
 	text-align: center;
@@ -1053,8 +616,8 @@ html, body {
 
 #nav_pills1,#nav_pills2  {
 	text-align: center;
-	/*	display: inline-block;	*/
 	padding: 0rem 2rem;
+	
 }
 
 .nav-pills>li>a.active{
@@ -1278,7 +841,7 @@ a:hover {
   	font-stretch: normal;
   	font-style: normal;
   	line-height: 1.86;
-  	letter-spacing: normal;
+  	letter-spacing: -1px;
   	text-align: left;
   	color: #666666;
 }
@@ -1353,10 +916,9 @@ a:hover {
 	
 	padding: 1.2rem 2rem;
 	
-	/*color: #707070;*/
+	color: #999999;
 	background-color: #f9f9f9;
-	
-	border: solid 1px #707070;
+	border: 0.1rem solid #999999;
     border-radius: 23px;
 	margin: 5px 0px;
 }
@@ -1377,7 +939,7 @@ a:hover {
 	background-color: #7900ab;
 	border: 0.1rem solid #7900ab;
     border-radius: 23px;
-	margin: 5px 0px;
+	margin: 5px 0px 90px 0px;
 	
 }
 
@@ -1393,12 +955,35 @@ a:hover {
   	line-height: 3.33;
   	letter-spacing: normal;
 	
-    color: #7900ab;
-
-    cursor:pointer;
-    margin-top: 25px;
+  	color: #7900ab;
 	
+	cursor:pointer;
+	margin-top: 25px;
 }
+
+#interest_survey_result_link_box{
+	border: 0.1rem solid #7900ab;
+	cursor: pointer;
+}
+#ISR_link_box_title, #ISR_link_box_content{
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.32px;
+	margin: 10px 0px;
+}
+#ISR_link_box_title{
+	font-family: NanumSquareEB;
+	font-size: 1.7rem;	
+	color: #7900ab;
+}
+#ISR_link_box_content{
+	font-family: NanumSquareR;
+	font-size: 1rem;
+	color: #333333;
+}
+
 
 
 /* Safari */
@@ -1411,7 +996,6 @@ a:hover {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
 
 
 /**************/
@@ -1440,7 +1024,7 @@ a:hover {
   color: #333333;
 }
 .modal-header{
-	border-bottom: 0px !important;
+	border-bottom: 0px !important;	
 	padding: 1.5rem 2.5rem 0rem 2.5rem !important;
 }
 
@@ -1455,7 +1039,7 @@ a:hover {
   	font-weight: normal;
   	font-stretch: normal;
   	font-style: normal;
-  	line-height: 1.7;
+  	line-height: 1.7;	
   	letter-spacing: normal;
   	text-align: center;
   	color: #333333;
@@ -1469,14 +1053,14 @@ a:hover {
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
-  color: #666666;
+  color: #666666;	
 }
 .modal_button_div {
 	max-width: 30rem;
     margin: 0 auto;
 }
 #modal_button_common{
-
+	
 	font-family: NanumSquareB;
 	font-size: 1.3rem;
 	font-weight: bold;
@@ -1487,38 +1071,232 @@ a:hover {
 	text-align: center;
 
 	width: 60%;
-
+	
 	background-color: #7900ab;
     color: #ffffff;
-
+	
 	border: 0.1rem solid #7900ab;
     border-radius: 23px;
 	margin: 1.5rem auto 0rem auto;
 	padding: 0px;
-
+	
 }
 #modal_button_common:hover {
    color: #666666;
    background-color: #f9f9f9;
 }
 
-#modal_hr_inline, #modal_hr_inline2, #modal_hr_inline3 {
+#modal_hr_inline, #modal_hr_inline2, #modal_hr_inline3 {	
 	background-color: #7900ab;
 	border: 0rem solid #7900ab;
-	height: 1px;
+	height: 1px;   
 }
 #modal_hr_inline {
 	margin-top: 13px !important;
 	margin-bottom: 1.1px !important;
 }
-#modal_hr_inline2 {
+#modal_hr_inline2 {	
 	margin-top: 0px !important;
 	margin-bottom: 1.1px !important;
 }
-#modal_hr_inline3 {
+#modal_hr_inline3 {	
 	margin-top: 13px !important;
 	margin-bottom: 13px !important;
 }
+
+
+	
+#realestate_detail_second_title, #realestate_detail_third_title{
+		margin: 0 auto;
+		
+		font-family: NanumSquareEB;
+  		font-weight: normal;
+  		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: center;
+		color: #7900ab;
+}
+#realestate_detail_second_content{
+		
+		  font-family: NanumSquareR;
+		  font-weight: normal;
+		  font-stretch: normal;
+		  font-style: normal;
+		  line-height: 1.5;
+		  letter-spacing: normal;
+		  text-align: left;
+		  color: #333333;
+		
+}
+#realestate_detail_middle_title{
+	font-family: NanumSquareEB;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  color: #7900ab;
+}
+#realestate_detail_middle_content{
+	font-family: NanumSquareR;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #666666;
+}
+.realestate_detail_third_content{
+  
+  font-family: NanumSquareEB;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: center;
+  color: #070707;
+}
+.realestate_detail_third_sub_content{
+  font-family: NanumSquareR;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: center;
+  color: #707070;
+}
+
+#realestate_detail_third_title{
+	margin: 30px 0px 40px 0px;
+}
+.realestate_detail_third_common{
+	text-align: center;
+	margin: 10px 0px;
+}
+#realestate_detail_third_caution{
+	
+	margin: 50px 0px 0px 0px;
+  font-family: NanumSquareR;
+  font-size: 11px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.78;
+  letter-spacing: normal;
+  text-align: right;
+  color: #bbbbbb;
+}
+
+#img_study_detail {
+	background-image: url('../images//img_study_detail.jpg');
+	background-size: cover;
+
+	height: 235px;	 
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	
+    font-family: NanumSquareEB;
+    
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: center;
+
+    color: #ffffff;
+}
+.middle_content_common_parent {
+	height: 235px;	 
+	padding: 3rem 0rem;
+}
+#realestate_detail_gray_zone{
+  background-color: #f1f1f1;
+}
+#realestate_detail_gray_zone{
+  font-size: 1.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+#realestate_detail_gray_zone_head{
+
+  font-family: NanumSquareEB;
+  line-height: 2.81;  
+  color: #7900ab;
+}
+#realestate_detail_gray_zone_tail{ 
+  font-family: NanumSquareR;
+  line-height: 1.53;
+  color: #070707;
+}
+
+#realestate_detail_last_main_text{
+	
+	margin: 10px 0px;
+	
+  font-family: NanumSquareEB;
+  font-size: 2.1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  color: #070707;
+}
+#realestate_detail_last_sub_text{
+	  
+  font-family: NanumSquareR;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: #707070;
+}
+#realestate_detail_apply{
+  font-family: NanumSquareEB;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #7900ab;	
+}
+#realestate_detail_apply_main{	
+  border-radius: 58px;
+  border: solid 2px #7900ab
+}
+.remove_padding_ico{
+	padding: 0px !important;
+	height: 100%;
+}
+.remove_padding_ABT{
+	padding: 15px 10px !important;
+	height: 100%;
+	text-align: left;
+}
+
+.ico_check_detail {
+	text-align: end;
+}
+.page4_card_common {
+	cursor: pointer;	
+}
+
+
+
+
+
 
 
 

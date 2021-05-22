@@ -1,9 +1,10 @@
-<html lagn="ko"
+<html lang="ko"
       xmlns:th="http://www.thymeleaf.org">
 
 <!-- The Modal -->
-<div class="modal" id="myModal" th:fragment="modalFragment" role="document">
-    <div class="modal-dialog full_box_modal">
+<div class="modal fade" id="myModal" th:fragment="modalFragment" role="dialog" tabindex="-1" aria-hidden="true" data-backdrop="static">
+
+    <div class="modal-dialog" role="document">
         <div class="modal-content" style="border-radius:0px;">
 
             <!-- Modal Header -->
@@ -83,10 +84,9 @@
 
             <!-- Modal footer
             <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-outline-primary" data-dismiss="modal"  style="width: 2rem; opacity:1; margin:0;">닫기</button>
             </div>
-            -->
-
+			-->
         </div>
     </div>
 </div>
