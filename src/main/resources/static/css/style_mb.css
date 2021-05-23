@@ -26,7 +26,7 @@
 	.first_topic {
 		padding: 40px 0px 15px 10px;
 	
-		font-size: 75px;
+		font-size: 7rem;
 		color: #7900ab;
 		font-family: NanumSquareEB;
 		font-weight: normal;
@@ -426,6 +426,17 @@
 		padding: 0px 0px 0px 10px !important;
 		height: 100%;
 	}
+	#ISR_link_box_title{
+		font-family: NanumSquareEB;
+		font-size: 1.4rem;	
+		color: #7900ab;
+	}
+	#ISR_link_box_content{
+		font-family: NanumSquareR;
+		font-size: 0.7rem;
+		color: #333333;
+	}
+	
 }
 
 

@@ -971,17 +971,7 @@ a:hover {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: -0.32px;
-	margin: 10px 0px;
-}
-#ISR_link_box_title{
-	font-family: NanumSquareEB;
-	font-size: 1.7rem;	
-	color: #7900ab;
-}
-#ISR_link_box_content{
-	font-family: NanumSquareR;
-	font-size: 1rem;
-	color: #333333;
+  margin: 0.5rem 0px;
 }
 
 
@@ -1281,9 +1271,12 @@ a:hover {
 	height: 100%;
 }
 .remove_padding_ABT{
-	padding: 15px 10px !important;
+	padding: 1rem 0.5rem !important;
 	height: 100%;
 	text-align: left;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ico_check_detail {
