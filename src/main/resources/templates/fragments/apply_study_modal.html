@@ -1,94 +1,103 @@
 <html lang="ko"
       xmlns:th="http://www.thymeleaf.org">
 
-<!-- The Modal -->
-<div class="modal fade" id="myModal" th:fragment="modalFragment" role="dialog" tabindex="-1" aria-hidden="true" data-backdrop="static">
+		     <!-- The Modal -->
+			  <div class="modal fade" id="myModal" th:fragment="modalFragment" role="dialog" tabindex="-1" aria-hidden="true" data-backdrop="static">
+			  
+				<div class="modal-dialog full_box_modal"role="document"> 
+				  <div class="modal-content" style="border-radius:0px;">
 
-    <div class="modal-dialog full_box_modal" role="document">
-        <div class="modal-content" style="border-radius:0px;">
+					<!-- Modal Header -->
+					<div class="modal-header">
+					  <span id="modal_head_label" class="modal-title">스터디 신청</span>
+					  <img type="button" class="close" style="width: 3.3rem; opacity:1; margin:0;" data-dismiss="modal"  src="/images/btn_exit_apply.png"> 
+					  
+					</div>
+					
+					<!-- Modal body <hr id="modal_hr_inline2">	 -->
+					<div class="modal-body">
+						
+						
+						<div class="row">
+							<div class="col-sm-6 col-xs-6 modal_card_common modal_hr_inline3" onclick="window.open('https://forms.gle/9a1nVmcBhe8DruUr9');">
+								
+								<img class="index_link modal_img" src="/images/ico_chart_main.svg"> 
+								<img class="index_link_white modal_img" src="/images/ico_chart_main_white.png"> 
+								<div class="modal_card_title_head">주식</div>
+								
+								
+								<div class="modal_card_title">
+									<div>매일 보는 주식 차트,</div>
+									<div>과연 나는 맞게 하고 있을까?</div>
+								</div>
+								
+								
+							</div>
+							
+							<div class="col-sm-6 col-xs-6 modal_card_common" onclick="window.open('https://forms.gle/Lgeh2e4q9fcMWvJ67');">
+								<img class="index_link modal_img" src="/images/ico_realestate_main.svg"> 
+								<img class="index_link_white modal_img" src="/images/ico_realestate_main_white.svg"> 
+								<div class="modal_card_title_head">부동산</div>
+								
+								
+								<div class="modal_card_title">
+									<div>부동산, 가장 늦었다고</div>
+								<div>생각할 때가 정말 늦었다!</div>
+								</div>
+								
+							</div>
+							
+							
+						</div>
+						
+						<hr id="modal_hr_inline2">
+						
+						<div class="row">
+							<div class="col-sm-6 col-xs-6 modal_card_common modal_hr_inline3" onclick="window.open('https://forms.gle/9a1nVmcBhe8DruUr9');">
+								
+								<img class="index_link modal_img" src="/images/ico_financial_main.svg"> 
+								<img class="index_link_white modal_img" src="/images/ico_financial_main_white.svg"> 
+								<div class="modal_card_title_head">금융상품</div>
+								
+								
+								<div class="modal_card_title">
+									<div>금융 상품의 개념부터,</div>
+									<div>전문 분야까지 차근차근!</div>
+								</div>
+								
+							</div>
+							
+							
+							<div class="col-sm-6 col-xs-6 modal_card_common_etc">
+								<span class="index_link modal_img" style="padding:0.5rem;">
+									<img src="/images/ico_info_apply.svg"> 	
+								</span>
+								
+								<div class="modal_card_title" style="margin-top:1rem;">
+									<div>요청 시 스터디 종류가 </div>
+									<div>추가될 예정입니다.</div>
+								</div>
+							</div>
+								
+							
+						</div>
+					  	
+					  
+					</div>
+					
+					<!-- Modal footer<hr id="modal_hr_inline2">	 -->
+					<div class="modal-footer">
+						가장 선택하고 싶은 스터디를 지금 바로 신청하세요. 여러분과 가장 비슷한 사람들을
+						모아 함께 이야기하다 보면 어느새 가까워져 있을거에요.
+					</div>
+					
 
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <span class="modal-title">함께하는 금융수다</span>
-                <img type="button" class="close" style="width: 2rem; opacity:1; margin:0;" data-dismiss="modal"  src="/images/btn_exit_apply.png">
-            </div>
-
-            <!-- Modal body -->
-            <div class="modal-body">
-                <hr id="modal_hr_inline2">
-                <div class="modal_card_common card_stock" id="card1" onclick="window.open('https://forms.gle/9a1nVmcBhe8DruUr9');">
-                    <div class="card_head">
-                        <img class="index_link" style="width:5rem;" src="/images/ico_chart_main.svg">
-                        <div class="modal_card_title_head">주식</div>
-                    </div>
-
-                    <div class="modal_card_title">
-                        <div>매일 보는 주식 차트,</div>
-                        <div>과연 나는 맞게 하고 있을까?</div>
-                    </div>
-
-                    <div class="modal_button_div">
-                        <button id="modal_button_common">신청하기</button>
-                    </div>
-                </div>
-
-                <hr id="modal_hr_inline">
-
-                <div class="modal_card_common card_housing" id="card2" onclick="window.open('https://forms.gle/Lgeh2e4q9fcMWvJ67');">
-                    <div class="card_head">
-                        <img class="index_link" style="width:5rem;" src="/images/ico_realestate_main.svg">
-                        <div class="modal_card_title_head">부동산</div>
-                    </div>
+					</div>
+				</div>
+				  
+		</div>
 
 
 
-                    <div class="modal_card_title">
-                        <div>부동산, 가장 늦었다고</div>
-                        <div>생각할 때가 정말 늦었다!</div>
-                    </div>
-
-                    <div class="modal_button_div">
-                        <button id="modal_button_common">
-                            신청하기
-                        </button>
-                    </div>
-
-                </div>
-
-
-                <hr id="modal_hr_inline">
-
-                <div class="modal_card_common card_finance" id="card3" onclick="window.open('https://forms.gle/qghyQFyuSrzHdh897');">
-                    <div class="card_head">
-                        <img class="index_link" style="width:5rem;" src="/images/ico_financial_main.svg">
-                        <div class="modal_card_title_head">금융상품</div>
-                    </div>
-
-                    <div class="modal_card_title">
-                        <div>금융상품의 개념부터</div>
-                        <div>전문 분야까지 차근차근!</div>
-                    </div>
-
-
-                    <div class="modal_button_div">
-                        <button id="modal_button_common">
-                            신청하기
-                        </button>
-                    </div>
-
-                </div>
-
-                <hr id="modal_hr_inline3">
-
-            </div>
-
-            <!-- Modal footer
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-primary" data-dismiss="modal"  style="width: 2rem; opacity:1; margin:0;">닫기</button>
-            </div>
-			-->
-        </div>
-    </div>
-</div>
 
 </html>

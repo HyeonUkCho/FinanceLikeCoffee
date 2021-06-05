@@ -265,8 +265,41 @@
 		background-size: cover;
 		height:1450px;
 	}
+	.study_basic_detail_first_section {
+		background-image: url('../images//img_stock_bg_detail.jpg'); 
+		background-size: cover;
+		background-position: center;
+		height:1450px;
+	}
+	.financial_basic_detail_first_section {
+		background-image: url('../images//img_financial_bg3_detail.jpg'); 
+		background-size: cover;
+		background-position: center;
+		height:1450px;
+	}
+	.realestate_basic_detail_first_section {
+		background-image: url('../images//img_realestate_basic_detail.jpg'); 
+		background-size: cover;
+		background-position: center;
+		height:1550px;
+	}
+	.realestate_subscribe_detail_first_section
+	{
+		background-image: url('../images//img_realestate_basic_detail.jpg'); 
+		background-size: cover;
+		background-position: center;
+		height:1450px;
+	}
+	.study_prac_detail_first_section
+	{
+		background-image: url('../images//img_stock_prac_detail.jpg'); 
+		background-size: cover;
+		background-position: center;
+		height:1450px;
+	}
+	
 
-	#realestate_detail_first_main_text {
+	#detail_first_main_text {
 
 		margin-top: 80px; 
 
@@ -280,7 +313,7 @@
 	  text-align: left;
 	  color: #fefefe;
 	}
-	#realestate_detail_first_sub_text{
+	#detail_first_sub_text{
 		margin-top: 15px;
 
 	  font-family: NanumSquareR;
@@ -293,7 +326,7 @@
 	  text-align: left;
 	  color: #cccccc;
 	}
-	#realestate_detail_first_price {
+	#detail_first_price {
 
 		margin: 150px 0 120px 0;
 		padding: 0px 15px;
@@ -308,9 +341,9 @@
 	  text-align: left;
 	  color: #ffffff;
 	}
-	#realestate_detail_first_center_main_text{
+	#detail_first_center_main_text{
 	  
-	  padding: 0px 4.7rem;
+	  padding: 0px 3.5rem;
 	  font-family: NanumSquareEB;
 	  font-size: 2.6rem;
 	  font-weight: normal;
@@ -321,7 +354,7 @@
 	  text-align: center;
 	  color: #f0f0f0;
 	}
-	#realestate_detail_first_center_sub_text{
+	#detail_first_center_sub_text{
 		
 	  padding: 0px 15px;
 
@@ -337,13 +370,14 @@
 
 	}
 
-	#realestate_detail_first_center_sub2_text{
-		margin: 20px 0 150px 0;
+	#detail_first_center_sub2_text{
+		margin: 20px 0 80px 0;
 	}
 
-	.realestate_detail_little_text{
+	.detail_little_text{
 
 	  margin: 10px 0px;
+	  padding: 0px 5rem !important;
 	  font-family: NanumSquareR;
 	  font-size: 1.1rem;
 	  font-weight: normal;
@@ -351,14 +385,14 @@
 	  font-style: normal;
 	  line-height: 1.45;
 	  letter-spacing: normal;
-	  text-align: center;
+	  text-align: left;
 	  color: #cccccc;
 	}
 	
-	#realestate_detail_second_title, #realestate_detail_third_title{
+	#detail_second_title, #detail_third_title{
   		font-size: 3.2rem;
 	}
-	#realestate_detail_second_content{		
+	#detail_second_content{		
 		height: 300px;
 		font-size: 1.4rem;
 	}
@@ -367,7 +401,7 @@
 		height: 300px;
 		display: table-cell;
 	}
-	#realestate_detail_middle_box{
+	#detail_middle_box{
 		
 		padding: 30px 2rem;
 		border: 1px solid #7900ab;
@@ -375,12 +409,12 @@
 		margin: 0 auto;
 		display: inline-block;
 	}
-	#realestate_detail_middle_title{
+	#detail_middle_title{
 	  	font-size: 2rem;
 		margin: auto 0;
 		text-align: center;
 	}
-	#realestate_detail_middle_content{
+	#detail_middle_content{
 	  	font-size: 1.3rem;
 
 	}
@@ -388,37 +422,47 @@
 		padding: 0px;
 		margin: 0px 0px 10px 0px;
 	}
-	.realestate_detail_third_content{
+	.detail_third_content{
 		font-size: 2rem;
 	}
-	.realestate_detail_third_sub_content{
+	.detail_third_sub_content{
 		font-size: 1.3rem;
 	}
 	#img_study_detail{
 		margin-bottom: 50px;
 		font-size: 2.2rem;
 	}
-	#realestate_detail_gray_zone{
+	#detail_gray_zone{
   		font-size: 1.4rem;
 	}
 	#pagesection5{
-		padding: 5rem 5rem;
+		padding: 10rem 5rem;
 	}
-	#realestate_detail_gray_zone{
+	#detail_gray_zone{
 		padding: 5rem 3.5rem;
 	}
-	.realestate_detail_last_common_box {   
+	.detail_last_common_box {   
 		margin: 20px 0px;
 		text-align: center;
 		padding: 2rem 1.5rem;
 		background-color: #ffffff;
 		min-height: 200px;
 	}
-	#realestate_detail_apply{
-		font-size: 1.8rem;
-		padding: 15rem 3rem;
+	#detail_third_caution
+	{
+		text-align: center;
 	}
-	#realestate_detail_last_sub_text{
+	#detail_apply{
+		font-size: 1.4rem;
+		padding: 2rem 2rem;
+	}
+	#detail_apply_info, .detail_apply_main{
+		padding: 0px !important;
+	}
+	#detail_apply_main_pc{
+		display: none;
+	}
+	#detail_last_sub_text{
 	  font-size: 1.2rem;
 	  padding: 0rem 1rem;
 	}
@@ -435,6 +479,34 @@
 		font-family: NanumSquareR;
 		font-size: 0.7rem;
 		color: #333333;
+	}
+	#detail_mikkle{
+		height: 300px; 
+	}
+	.full_box_modal {
+		max-width: 90%;	
+		margin: 5rem auto !important;
+	}
+	.modal_card_title_head {
+		font-size: 2.6rem;
+		line-height: 1.6;	
+	}
+	.modal_card_title {
+	  font-size: 1.4rem;
+	  line-height: 1.4;
+	}
+	.modal-footer {
+		font-size: 1.1rem;
+		line-height: 1.3;
+		padding: 2rem 2rem !important;	
+	}
+	.modal_card_common, 
+	.modal_card_common_etc{
+		padding: 3rem 0rem 3rem 1rem !important;
+		cursor:pointer;
+	}
+	.modal_card_common_etc{
+		cursor: default;
 	}
 	
 }

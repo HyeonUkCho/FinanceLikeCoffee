@@ -65,10 +65,43 @@ public class HomeController {
         homeService.saveVisitLog(request,device,"survey");
         return "interest_survey";
     }
+    
     @GetMapping("/realestate_detail")
     public String realestate_detail(Model model, HttpServletRequest request, Device device) {
         logger.info("realestate_detail page assessed.......");
-        homeService.saveVisitLog(request,device,"realestate_detail");
+        homeService.saveVisitLog(request,device,"real_detail");
         return "studydetail/realestate_detail";
     }
+    @GetMapping("/stock_basic_detail")
+    public String stock_basic_detail(Model model, HttpServletRequest request, Device device) {
+        logger.info("stock_basic_detail page assessed.......");
+        homeService.saveVisitLog(request,device,"stock_basic_detail");
+        return "studydetail/stock_basic_detail";
+    }
+    @GetMapping("/financial_basic_detail")
+    public String financial_basic_detail(Model model, HttpServletRequest request, Device device) {
+    	logger.info("financial_basic_detail page assessed.......");
+        homeService.saveVisitLog(request,device,"finan_basic_detail");
+        return "studydetail/financial_basic_detail";
+    }
+    @GetMapping("/realestate_basic_detail")
+    public String realestate_basic_detail(Model model, HttpServletRequest request, Device device) {
+    	logger.info("realestate_basic_detail page assessed.......");
+        homeService.saveVisitLog(request,device,"real_basic_detail");
+        return "studydetail/realestate_basic_detail";
+    }
+    @GetMapping("/realestate_subscribe_detail")
+    public String realestate_subscribe_detail(Model model, HttpServletRequest request, Device device) {
+    	logger.info("realestate_subscribe_detail page assessed.......");
+        homeService.saveVisitLog(request,device,"reale_subscr_detail");
+        return "studydetail/realestate_subscribe_detail";
+    }
+    @GetMapping("/stock_prac_detail")
+    public String stock_prac_detail(Model model, HttpServletRequest request, Device device) {
+    	logger.info("stock_prac_detail page assessed.......");
+        homeService.saveVisitLog(request,device,"stock_prac_detail");
+        return "studydetail/stock_prac_detail";
+    }
+    
+    
 }

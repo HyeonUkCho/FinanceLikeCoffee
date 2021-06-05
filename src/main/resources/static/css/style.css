@@ -137,7 +137,7 @@ html, body {
 }
 
 #main_image{
-	height: 43rem;
+	height: 38rem;
     /*background-image: url(./img/dummy.png);*/
     background-repeat: no-repeat;
     background-position: center center;
@@ -210,6 +210,13 @@ html, body {
 	margin-top: 0px !important;
     margin-bottom: 0px !important;	
 }
+#hr_inlin3_1 {
+	background-color: #7900ab;
+	border: 0rem solid #7900ab;
+	height: 2px;
+	margin-top: 0px !important;
+    margin-bottom: 50px !important;	
+}
 #hr_inline4 {
 	background-color: #7900ab;
 	border: 0.1rem solid #7900ab;
@@ -280,18 +287,19 @@ html, body {
 }
 
 .modal_card_common{
-	max-width: 400px;
-	padding: 1rem;
-	margin: 0 auto;
-	background-color: white;
+	padding: 3rem 0rem 3rem 3rem !important;
 }
-
-.card_common:hover{	
+.card_common:hover, 
+.modal_card_common:hover
+{	
 	background-color: #7900ab;
 	color: white;
 }
 .card_common:hover > .card_title, .card_common:hover > .card_content_first,
-.card_common:hover > .card_head {
+.card_common:hover > .card_head, 
+.modal_card_common:hover > .modal_card_title_head,
+.modal_card_common:hover > .modal_card_title
+{
 	color: #f9f9f9;
 }
 .card_common:hover > #hr_inline,
@@ -301,13 +309,14 @@ html, body {
 }
 .card_common:hover  .index_link,
 .card_common:hover  .ico_next,
-.index_link_white,
-.ico_next_white
+.index_link_white, .ico_next_white,
+.modal_card_common:hover  .index_link
 {
 	display: none;	
 }
 .card_common:hover .index_link_white,
-.card_common:hover .ico_next_white
+.card_common:hover .ico_next_white, 
+.modal_card_common:hover .index_link_white
 {
 	display: inline;	
 }
@@ -992,58 +1001,41 @@ a:hover {
 /***  MODAL ***/
 /**************/
 
-.modal-dialog {
-	width: 500px !important;
-}
 #myModal {
 	/*	text-align: center;  */
 	margin: 0 auto;
 }
 .modal-body {
-	text-align: center;
-	padding: 0.5rem 2rem 2rem 2rem !important;
+	text-align: left;
+	padding: 0px !important;
 }
 .modal-title {
-  font-family: NanumSquareR;
-  font-size: 1.6rem;
-  font-weight: normal;
+  font-family: NanumSquareEB;
+  font-size: 2.2rem;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 6.5;
   letter-spacing: normal;
   color: #333333;
 }
-.modal-header{
-	border-bottom: 0px !important;	
-	padding: 1.5rem 2.5rem 0rem 2.5rem !important;
-}
-
-.full_box_modal {
-	max-width: 80%;
-	/*	padding: 0 7rem 0 7rem; */
-	margin: 50px auto !important;
-}
 .modal_card_title_head {
 	font-family: NanumSquareEB;
-    font-size: 2.7rem;
   	font-weight: normal;
   	font-stretch: normal;
   	font-style: normal;
-  	line-height: 1.7;	
   	letter-spacing: normal;
-  	text-align: center;
   	color: #333333;
+  	padding-left: 1rem;
 }
 .modal_card_title {
   font-family: NanumSquareR;
-  font-size: 1.6rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.5;
   letter-spacing: normal;
-  text-align: center;
-  color: #666666;	
+  color: #666666;
+  padding-left: 1rem;	
 }
 .modal_button_div {
 	max-width: 30rem;
@@ -1076,27 +1068,17 @@ a:hover {
    background-color: #f9f9f9;
 }
 
-#modal_hr_inline, #modal_hr_inline2, #modal_hr_inline3 {	
-	background-color: #7900ab;
-	border: 0rem solid #7900ab;
-	height: 1px;   
-}
-#modal_hr_inline {
-	margin-top: 13px !important;
-	margin-bottom: 1.1px !important;
-}
-#modal_hr_inline2 {	
+#modal_hr_inline2 {
 	margin-top: 0px !important;
 	margin-bottom: 1.1px !important;
 }
-#modal_hr_inline3 {	
-	margin-top: 13px !important;
-	margin-bottom: 13px !important;
+.modal_hr_inline3{
+	border-right: 1px solid #e5e5e5;
+    height: 100%;
 }
 
-
 	
-#realestate_detail_second_title, #realestate_detail_third_title{
+#detail_second_title, #detail_third_title{
 		margin: 0 auto;
 		
 		font-family: NanumSquareEB;
@@ -1108,7 +1090,7 @@ a:hover {
 		text-align: center;
 		color: #7900ab;
 }
-#realestate_detail_second_content{
+#detail_second_content{
 		
 		  font-family: NanumSquareR;
 		  font-weight: normal;
@@ -1120,7 +1102,7 @@ a:hover {
 		  color: #333333;
 		
 }
-#realestate_detail_middle_title{
+#detail_middle_title{
 	font-family: NanumSquareEB;
   font-weight: normal;
   font-stretch: normal;
@@ -1129,7 +1111,7 @@ a:hover {
   letter-spacing: normal;
   color: #7900ab;
 }
-#realestate_detail_middle_content{
+#detail_middle_content{
 	font-family: NanumSquareR;
   font-weight: normal;
   font-stretch: normal;
@@ -1139,7 +1121,7 @@ a:hover {
   text-align: left;
   color: #666666;
 }
-.realestate_detail_third_content{
+.detail_third_content{
   
   font-family: NanumSquareEB;
   font-weight: normal;
@@ -1150,7 +1132,7 @@ a:hover {
   text-align: center;
   color: #070707;
 }
-.realestate_detail_third_sub_content{
+.detail_third_sub_content{
   font-family: NanumSquareR;
   font-weight: normal;
   font-stretch: normal;
@@ -1161,14 +1143,14 @@ a:hover {
   color: #707070;
 }
 
-#realestate_detail_third_title{
+#detail_third_title{
 	margin: 30px 0px 40px 0px;
 }
-.realestate_detail_third_common{
+.detail_third_common{
 	text-align: center;
 	margin: 10px 0px;
 }
-#realestate_detail_third_caution{
+#detail_third_caution{
 	
 	margin: 50px 0px 0px 0px;
   font-family: NanumSquareR;
@@ -1178,7 +1160,7 @@ a:hover {
   font-style: normal;
   line-height: 1.78;
   letter-spacing: normal;
-  text-align: right;
+  
   color: #bbbbbb;
 }
 
@@ -1206,10 +1188,10 @@ a:hover {
 	height: 235px;	 
 	padding: 3rem 0rem;
 }
-#realestate_detail_gray_zone{
+#detail_gray_zone{
   background-color: #f1f1f1;
 }
-#realestate_detail_gray_zone{
+#detail_gray_zone{
   font-size: 1.7rem;
   font-weight: normal;
   font-stretch: normal;
@@ -1217,19 +1199,19 @@ a:hover {
   letter-spacing: normal;
   text-align: left;
 }
-#realestate_detail_gray_zone_head{
+#detail_gray_zone_head{
 
   font-family: NanumSquareEB;
   line-height: 2.81;  
   color: #7900ab;
 }
-#realestate_detail_gray_zone_tail{ 
+#detail_gray_zone_tail{ 
   font-family: NanumSquareR;
   line-height: 1.53;
   color: #070707;
 }
 
-#realestate_detail_last_main_text{
+#detail_last_main_text{
 	
 	margin: 10px 0px;
 	
@@ -1242,7 +1224,7 @@ a:hover {
   letter-spacing: normal;
   color: #070707;
 }
-#realestate_detail_last_sub_text{
+#detail_last_sub_text{
 	  
   font-family: NanumSquareR;
   font-weight: normal;
@@ -1252,19 +1234,20 @@ a:hover {
   letter-spacing: normal;
   color: #707070;
 }
-#realestate_detail_apply{
+#detail_apply{
   font-family: NanumSquareEB;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 2.25;
   letter-spacing: normal;
-  text-align: center;
-  color: #7900ab;	
-}
-#realestate_detail_apply_main{	
-  border-radius: 58px;
-  border: solid 2px #7900ab
+  text-align: center;	
+	
+  box-shadow: 0px 0px 0px 0.5px grey;	
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
 }
 .remove_padding_ico{
 	padding: 0px !important;
@@ -1285,6 +1268,45 @@ a:hover {
 .page4_card_common {
 	cursor: pointer;	
 }
+
+#detail_apply_info{
+	color: #333333;
+	float: left;
+	text-align: left;
+}
+.detail_apply_main{
+	border-radius: 58px;
+	color: #ffffff;
+	background-color: #7900ab;
+	float: right !important; 
+	/* width: 50rem; */
+		
+}
+#detail_row {	
+    text-align: center;
+    display: inline;
+}
+.navColor_detail{
+	color: #ccc !important;
+}
+.sticky {
+	position: fixed;
+    bottom: 0;
+	transition: 0.5s;
+	z-index: 10;
+}
+.modal_img {
+	width: 5rem;
+}
+.modal-footer {
+	text-align: left !important;
+	color: #999999;
+	font-family: NanumSquareR;
+  	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+}
+
 
 
 
