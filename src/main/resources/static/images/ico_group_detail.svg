@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#7900ab;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px}
+        </style>
+    </defs>
+    <g id="ico_group_detail" transform="translate(-696 -6080)">
+        <g id="그룹_207" transform="translate(563.095 5731.487)">
+            <circle id="타원_150" cx="8.661" cy="8.661" r="8.661" class="cls-1" transform="translate(142.417 382.145)"/>
+            <path id="패스_1330" d="M137.665 416.066a13.413 13.413 0 0 1 26.827 0" class="cls-1" transform="translate(0 -3.186)"/>
+            <circle id="타원_151" cx="8.661" cy="8.661" r="8.661" class="cls-1" transform="translate(169.244 382.145)"/>
+            <path id="패스_1331" d="M169.425 416.066a13.414 13.414 0 0 1 26.828 0" class="cls-1" transform="translate(-4.933 -3.186)"/>
+            <circle id="타원_152" cx="8.661" cy="8.661" r="8.661" class="cls-1" transform="translate(196.072 382.145)"/>
+            <path id="패스_1332" d="M201.186 416.066a13.413 13.413 0 0 1 26.827 0" class="cls-1" transform="translate(-9.867 -3.186)"/>
+        </g>
+        <path id="사각형_2059" fill="none" d="M0 0H90V90H0z" transform="translate(696 6080)"/>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#7900ab;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px}
+        </style>
+    </defs>
+    <g id="ico_money_detail" transform="translate(-255 -6080)">
+        <g id="그룹_209" transform="translate(208.009 5724.083)">
+            <ellipse id="타원_153" cx="16.359" cy="9.174" class="cls-1" rx="16.359" ry="9.174" transform="translate(75.631 382.145)"/>
+            <path id="패스_1333" d="M106.637 393.866a6.147 6.147 0 0 1 1.712 4.09c0 5.067-7.324 9.174-16.36 9.174s-16.359-4.108-16.359-9.174a6.508 6.508 0 0 1 2.322-4.715" class="cls-1" transform="translate(0 2.792)"/>
+            <path id="패스_1334" d="M106.637 400.936a6.147 6.147 0 0 1 1.712 4.09c0 5.066-7.324 9.174-16.36 9.174s-16.359-4.108-16.359-9.174a6.31 6.31 0 0 1 1.991-4.391" class="cls-1" transform="translate(0 4.652)"/>
+            <path id="패스_1335" d="M106.637 408a6.147 6.147 0 0 1 1.712 4.09c0 5.067-7.324 9.174-16.36 9.174s-16.359-4.108-16.359-9.174a6.31 6.31 0 0 1 1.991-4.391" class="cls-1" transform="translate(0 6.429)"/>
+        </g>
+        <g id="그룹_210" transform="translate(-441)">
+            <path id="사각형_2059" fill="none" d="M0 0H90V90H0z" transform="translate(696 6080)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,44 @@
+<html lagn="ko"
+      xmlns:th="http://www.thymeleaf.org">
+
+<!--headerFragment 선언-->
+<div class="nav_wrap" th:fragment="headerFragment">
+    <!-- Navigation-->
+    <nav id="myhead_nav">
+        <div class="side_align_container container-fluid ">
+
+            <div id="index_main_home" class="col-lg-3 col-xs-12 nav_padding">
+                <img style="width:7rem; cursor:pointer;" onclick="location.href='/';" src="/images/logo_1x.png">
+                <span id="nav_head" class="navColor_detail" onclick="location.href='/';" style="cursor:pointer;"> 티끌미끌 : 함께하는 금융수다 </span>
+            </div>
+
+            <div class="col-lg-5 col-xs-0 nav_padding">   </div>
+
+            <hr class="side_align_container hr_head_mobile" id="hr_outline2">
+
+            <div class="col-lg-4 col-xs-12 nav_padding">
+
+                <div class="col-lg-3 col-xs-3 nav_content_detail_left">
+                    <a class="navhead_content navColor_detail" th:href="@{/about}">소개</a>
+                </div>
+
+                <div class="col-lg-3 col-xs-3 nav_content_detail_left">
+                    <a class="navhead_content navColor_detail" data-toggle="modal" data-target="#myModal" style="cursor:pointer;">스터디 신청</a>
+                </div>
+
+                <div class="col-lg-3 col-xs-3 nav_content_detail_right">
+                    <a class="navhead_content navColor_detail" th:href="@{/interest_survey}">성향 분석</a>
+                </div>
+
+                <div class="col-lg-3 col-xs-3 nav_content_detail_right">
+                    <a class="navhead_content navColor_detail" th:href="@{/FAQ}">FAQ</a>
+                </div>
+            </div>
+
+            <hr class="side_align_container hr_head_pc" id="hr_outline2">
+
+        </div>
+    </nav>
+</div>
+
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#7900ab;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px}
+        </style>
+    </defs>
+    <g id="ico_mask_detail" transform="translate(-1135 -6080)">
+        <g id="그룹_212" transform="translate(439)">
+            <path id="사각형_2059" fill="none" d="M0 0H90V90H0z" transform="translate(696 6080)"/>
+        </g>
+        <g id="그룹_213" transform="translate(995.993 5671.58)">
+            <path id="패스_1336" d="M198.3 467.024l-11.191 1.127a12.062 12.062 0 0 1-2.431 0l-11.191-1.127a7.844 7.844 0 0 1-7.549-8.109v-8.787a7.843 7.843 0 0 1 7.549-8.108l10.972-1.307a12.139 12.139 0 0 1 2.869 0l10.972 1.307a7.843 7.843 0 0 1 7.549 8.108v8.787a7.844 7.844 0 0 1-7.549 8.109z" class="cls-2" transform="translate(-1.892)"/>
+            <path id="패스_1337" d="M164.051 449.576s-16.988-7.287-16.988 2.936 11.907 10.816 16.988 7.757" class="cls-2" transform="translate(0 -.644)"/>
+            <path id="패스_1338" d="M210.3 449.576s16.988-7.287 16.988 2.936-11.908 10.816-16.988 7.757" class="cls-2" transform="translate(-6.337 -.644)"/>
+            <path id="선_85" d="M0 0L19.471 0" class="cls-2" transform="translate(174.271 457.86)"/>
+            <path id="선_86" d="M0 0L19.471 0" class="cls-2" transform="translate(174.271 450.898)"/>
+        </g>
+    </g>
+</svg>
