@@ -81,7 +81,7 @@
     </appender>
 
     <!-- root레벨 설정 -->
-    <root level="INFO">
+    <root level="DEBUG">
         <springProfile name="prod">
             <appender-ref ref="File"/>
             <appender-ref ref="Error"/>

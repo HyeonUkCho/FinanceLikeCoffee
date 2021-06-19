@@ -109,7 +109,7 @@ html, body {
 }
 #pagesection3 {
 	
-	background-image: url("../images//bg_main.jpg");
+	background-image: url("../images/bg_main.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -1165,7 +1165,7 @@ a:hover {
 }
 
 #img_study_detail {
-	background-image: url('../images//img_study_detail.jpg');
+	background-image: url('../images/img_study_detail.jpg');
 	background-size: cover;
 
 	height: 235px;	 

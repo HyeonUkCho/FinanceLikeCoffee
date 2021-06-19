@@ -261,38 +261,38 @@
 		margin:45px auto; width:100%; max-width: 400px;
 	}
 	.realestate_detail_first_section {
-		background-image: url('../images//img_realestate_bg_detail.jpg'); 
+		background-image: url('../images/img_realestate_bg_detail.jpg'); 
 		background-size: cover;
 		height:1450px;
 	}
 	.study_basic_detail_first_section {
-		background-image: url('../images//img_stock_bg_detail.jpg'); 
+		background-image: url('../images/img_stock_bg_detail.jpg'); 
 		background-size: cover;
 		background-position: center;
 		height:1450px;
 	}
 	.financial_basic_detail_first_section {
-		background-image: url('../images//img_financial_bg3_detail.jpg'); 
+		background-image: url('../images/img_financial_bg3_detail.jpg'); 
 		background-size: cover;
 		background-position: center;
 		height:1450px;
 	}
 	.realestate_basic_detail_first_section {
-		background-image: url('../images//img_realestate_basic_detail.jpg'); 
+		background-image: url('../images/img_realestate_basic_detail.jpg'); 
 		background-size: cover;
 		background-position: center;
 		height:1550px;
 	}
 	.realestate_subscribe_detail_first_section
 	{
-		background-image: url('../images//img_realestate_basic_detail.jpg'); 
+		background-image: url('../images/img_realestate_basic_detail.jpg'); 
 		background-size: cover;
 		background-position: center;
 		height:1450px;
 	}
 	.study_prac_detail_first_section
 	{
-		background-image: url('../images//img_stock_prac_detail.jpg'); 
+		background-image: url('../images/img_stock_prac_detail.jpg'); 
 		background-size: cover;
 		background-position: center;
 		height:1450px;
